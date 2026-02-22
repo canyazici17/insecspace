@@ -53,3 +53,9 @@ input:focus-visible {
 body {
   color: #ffffff;
 }
+
+#emergent-badge {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Calendar, MapPin, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
 
-const HeroSection = ({ heroData, eventDate }) => {
+const HeroSection = ({ heroData, eventDate, showContent = false }) => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -38,100 +38,78 @@ const HeroSection = ({ heroData, eventDate }) => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroData.main})` }}
+    <>
+      <section id="hero" className="relative h-screen w-full overflow-hidden">
+        {/* Background video (full viewport) */}
+        <video
+          id="main-video"
+          className="absolute inset-0 w-full h-full object-cover"
+          src={heroData.video || '/main-video.mp4'}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black" />
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-transparent to-blue-500/10" />
-      </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
-        {/* Logo */}
-        <div className="mb-8 flex justify-center">
-          <img 
-            src={heroData.logo} 
-            alt="INSECSPACE'2026" 
-            className="h-32 sm:h-40 md:h-48 w-auto object-contain"
-          />
-        </div>
+        {/* Optionally show content above video (default: hidden for pure-video hero) */}
+        {showContent && (
+          <div className="relative z-10 flex items-center justify-center h-full">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+              {/* Logo */}
+              <div className="mb-8 flex justify-center">
+                <img
+                  src={heroData.logo}
+                  alt="INSECSPACE'2026"
+                  className="h-32 sm:h-40 md:h-48 w-auto object-contain"
+                />
+              </div>
 
-        {/* Main Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 uppercase tracking-tight">
-          <span className="block text-white drop-shadow-2xl">INSECSPACE</span>
-          <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent mt-2">
-            2026
-          </span>
-        </h1>
+              {/* Main Headline */}
+              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 uppercase tracking-tight">
+                <span className="block text-white drop-shadow-2xl">INSECSPACE</span>
+                <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent mt-2">
+                  2026
+                </span>
+              </h1>
 
-        {/* Tagline */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8 font-light tracking-wide">
-          INNOVATIONS & SECURITY IN SPACE
-        </p>
-
-        {/* Event Details */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 text-gray-300">
-          <div className="flex items-center gap-2">
-            <Calendar className="w-5 h-5 text-cyan-400" />
-            <span className="text-lg">29 APRIL 2026</span>
-          </div>
-          <div className="hidden sm:block w-1 h-1 bg-cyan-400 rounded-full" />
-          <div className="flex items-center gap-2">
-            <MapPin className="w-5 h-5 text-cyan-400" />
-            <span className="text-lg">Information and Communication Technologies Authority (BTK) Conference Hall</span>
-          </div>
-        </div>
-
-        {/* Countdown Timer */}
-        <div className="mb-12">
-          <div className="inline-block bg-black/40 backdrop-blur-md border border-cyan-500/30 rounded-lg p-6">
-            <div className="grid grid-cols-4 gap-4 sm:gap-8">
-              {Object.entries(timeLeft).map(([unit, value]) => (
-                <div key={unit} className="text-center">
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1">
-                    {String(value).padStart(2, '0')}
-                  </div>
-                  <div className="text-xs sm:text-sm text-cyan-400 uppercase tracking-wider">
-                    {unit}
-                  </div>
-                </div>
-              ))}
+              {/* Tagline */}
+              <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8 font-light tracking-wide">
+                INNOVATIONS & SECURITY IN SPACE
+              </p>
             </div>
           </div>
-        </div>
+        )}
+      </section>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button
-            onClick={() => scrollToSection('contact')}
-            size="lg"
-            className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-6 text-lg font-semibold uppercase tracking-wider shadow-lg shadow-cyan-500/50 transition-all duration-300 hover:shadow-cyan-500/70 hover:scale-105"
-          >
-            Register Now
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
-          <Button
-            onClick={() => scrollToSection('about')}
-            size="lg"
-            variant="outline"
-            className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 px-8 py-6 text-lg font-semibold uppercase tracking-wider backdrop-blur-sm transition-all duration-300 hover:scale-105"
-          >
-            Learn More
-          </Button>
-        </div>
-      </div>
+      {/* Text block shown under the video (styled like screenshot) */}
+      <section className="bg-black text-gray-100 py-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-3xl font-semibold text-cyan-300">
+              <span className="font-bold text-white text-3xl sm:text-4xl">INSECSPACE’2026</span>
+            </h2>
+          </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="w-6 h-10 border-2 border-cyan-400 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-cyan-400 rounded-full animate-bounce" />
+          <p className="text-lg sm:text-xl mb-4">
+            will take place on <span className="font-bold">29 April 2026</span> in Ankara, Turkey
+          </p>
+
+          <p className="text-lg sm:text-xl mb-4">
+            at the <span className="font-bold">Information and Communication Technologies Authority (BTK) Conference Hall</span>,
+          </p>
+
+          <p className="text-lg sm:text-xl italic mb-8">
+            under the main theme “<span className="font-semibold">Secure Use of Innovative Technologies in Satellite Systems.</span>”
+          </p>
+
+          <p className="text-base sm:text-lg leading-relaxed text-gray-300 max-w-3xl mx-auto">
+            We as an <span className="font-bold">INSECSPACE’2026</span> Organizing Committee would like to extend our sincere thanks to all participants, speakers, partners, and sponsors, and I look forward to welcoming you to <span className="font-bold">INSECSPACE’2026</span>, where we will shape the future of space security together.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
