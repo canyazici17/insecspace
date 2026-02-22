@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,13 +14,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
-    }
-  };
+  const handleNavClick = () => setIsMobileMenuOpen(false);
 
   return (
     <nav
@@ -33,24 +28,36 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button
-              onClick={() => scrollToSection('hero')}
+            <Link
+              to="/"
+              onClick={handleNavClick}
               className="text-2xl font-bold bg-gradient-to-r from-white via-cyan-400 to-blue-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               INSECSPACE'26
-            </button>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['About', 'Highlights', 'Speakers', 'Schedule', 'Sponsors', 'Contact'].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider"
+            {[
+              { label: 'Home', to: '/' },
+              { label: 'About', to: '/about' },
+              { label: 'Programme', to: '/programme' },
+              { label: 'Sponsorship & Exhibition', to: '/sponsorship' },
+              { label: 'Registration', to: '/registration' },
+              { label: 'Venue', to: '/venue' },
+              { label: 'Media Center', to: '/media' },
+              { label: 'Contact', to: '/contact' },
+              { label: 'Committee', to: '/committee' }
+            ].map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                onClick={handleNavClick}
+                className="text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider px-3 mx-1"
               >
-                {item}
-              </button>
+                {item.label}
+              </Link>
             ))}
           </div>
 
@@ -70,14 +77,25 @@ const Navigation = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-cyan-500/20">
           <div className="px-4 py-6 space-y-4">
-            {['About', 'Highlights', 'Speakers', 'Schedule', 'Sponsors', 'Contact'].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
-                className="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider py-2"
+            {[
+              { label: 'Home', to: '/' },
+              { label: 'About', to: '/about' },
+              { label: 'Programme', to: '/programme' },
+              { label: 'Sponsorship & Exhibition', to: '/sponsorship' },
+              { label: 'Registration', to: '/registration' },
+              { label: 'Venue', to: '/venue' },
+              { label: 'Media Center', to: '/media' },
+              { label: 'Contact', to: '/contact' },
+              { label: 'Committee', to: '/committee' }
+            ].map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                onClick={handleNavClick}
+                className="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider py-2 px-3"
               >
-                {item}
-              </button>
+                {item.label}
+              </Link>
             ))}
           </div>
         </div>

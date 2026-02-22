@@ -1,29 +1,38 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import HighlightsSection from "./components/HighlightsSection";
-import SpeakersSection from "./components/SpeakersSection";
-import ScheduleSection from "./components/ScheduleSection";
-import SponsorsSection from "./components/SponsorsSection";
 import Footer from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
-import { conferenceData } from "./data/mockData";
 import "./App.css";
+
+// Pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Programme from "./pages/Programme";
+import Sponsorship from "./pages/Sponsorship";
+import Registration from "./pages/Registration";
+import Venue from "./pages/Venue";
+import MediaCenter from "./pages/MediaCenter";
+import Contact from "./pages/Contact";
+import Committee from "./pages/Committee";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <HeroSection 
-        heroData={conferenceData.heroImages} 
-        eventDate={conferenceData.eventDate}
-      />
-      <AboutSection aboutData={conferenceData.about} />
-      <HighlightsSection highlights={conferenceData.highlights} />
-      <SpeakersSection speakers={conferenceData.speakers} />
-      <ScheduleSection schedule={conferenceData.schedule} />
-      <SponsorsSection sponsors={conferenceData.sponsors} />
+      <main className="pt-20">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/programme" element={<Programme />} />
+          <Route path="/sponsorship" element={<Sponsorship />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/venue" element={<Venue />} />
+          <Route path="/media" element={<MediaCenter />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/committee" element={<Committee />} />
+        </Routes>
+      </main>
       <Footer />
       <Toaster position="top-right" richColors />
     </div>

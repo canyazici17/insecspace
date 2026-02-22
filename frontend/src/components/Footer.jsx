@@ -106,7 +106,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-400 hover:text-cyan-400 transition-colors">
                 <MapPin className="w-5 h-5 text-cyan-400" />
-                <span>Virtual Global Event</span>
+                <span>Information and Communication Technologies Authority (BTK) Conference Hall</span>
               </div>
             </div>
           </div>

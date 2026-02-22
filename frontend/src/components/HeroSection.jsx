@@ -82,7 +82,7 @@ const HeroSection = ({ heroData, eventDate }) => {
           <div className="hidden sm:block w-1 h-1 bg-cyan-400 rounded-full" />
           <div className="flex items-center gap-2">
             <MapPin className="w-5 h-5 text-cyan-400" />
-            <span className="text-lg">GLOBAL VIRTUAL EVENT</span>
+            <span className="text-lg">Information and Communication Technologies Authority (BTK) Conference Hall</span>
           </div>
         </div>
 
