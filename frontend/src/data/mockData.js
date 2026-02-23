@@ -12,8 +12,12 @@ export const conferenceData = {
 
   about: {
     title: "About INSECSPACE'2026",
-    description: "INSECSPACE'2026 brings together leading experts, researchers, and industry pioneers to explore the cutting edge of space security and innovation. Join us for three days of groundbreaking presentations, collaborative workshops, and networking opportunities that will shape the future of space exploration and protection.",
-    image: "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzcxNzY4MTg2fDA&ixlib=rb-4.1.0&q=85"
+    description: [
+      "Today, space and satellite technologies have evolved beyond being mere indicators of technological advancement and have become a critical domain at the center of security, sovereignty, sustainability, and strategic cooperation. In the digital age, the secure, efficient, and sustainable use of space systems is no longer a matter of choice, but a strategic imperative at both national and international levels.",
+      "In line with this vision, <strong>INSECSPACE’2026 Conference (Innovations &amp; Security in Space)</strong> — a high-value and strategically positioned platform operating at the intersection of space, satellite systems, and cybersecurity, with a strong focus on the secure use of innovative technologies in space — will be held on <strong>29 April 2026</strong>, in cooperation with <strong>TÜRKSAT</strong> and under the organization of <strong>MON-IN Consulting</strong>, at the <strong>BTK Conference Hall</strong>, under the main theme “Secure Use of Innovative Technologies in Satellite Systems.”",
+      "INSECSPACE’2026 aims to foster a security-oriented innovation culture within the space ecosystem, strengthen knowledge sharing, and promote interdisciplinary collaboration. In this context, the conference will bring together space, aerospace, and defense industry companies, satellite operators and manufacturers, public and governmental institutions, policy makers, strategic planners, industry decision-makers, academics, and key stakeholders from the R&D ecosystem."
+    ],
+    image: "/insecspace-logo.png"
   },
 
   highlights: [

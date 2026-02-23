@@ -7,32 +7,21 @@ const AboutSection = ({ aboutData }) => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}
           <div className="space-y-6">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold uppercase">
-              <span className="bg-gradient-to-r from-white to-cyan-400 bg-clip-text text-transparent">
-                {aboutData.title}
-              </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+              <span className="text-white">{aboutData.title}</span>
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500" />
-            <p className="text-lg text-gray-300 leading-relaxed">
-              {aboutData.description}
-            </p>
-            <div className="grid grid-cols-2 gap-6 pt-6">
-              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-6 backdrop-blur-sm">
-                <div className="text-3xl font-bold text-white mb-2">3</div>
-                <div className="text-cyan-400 text-sm uppercase tracking-wider">Days</div>
-              </div>
-              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-6 backdrop-blur-sm">
-                <div className="text-3xl font-bold text-white mb-2">50+</div>
-                <div className="text-cyan-400 text-sm uppercase tracking-wider">Speakers</div>
-              </div>
-              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-6 backdrop-blur-sm">
-                <div className="text-3xl font-bold text-white mb-2">100+</div>
-                <div className="text-cyan-400 text-sm uppercase tracking-wider">Sessions</div>
-              </div>
-              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-6 backdrop-blur-sm">
-                <div className="text-3xl font-bold text-white mb-2">1000+</div>
-                <div className="text-cyan-400 text-sm uppercase tracking-wider">Attendees</div>
-              </div>
+            <div className="w-24 h-0.5 bg-gray-700 rounded-sm" />
+            <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
+              {Array.isArray(aboutData.description)
+                ? aboutData.description.map((p, i) => (
+                    <p
+                      key={i}
+                      className="text-lg"
+                      dangerouslySetInnerHTML={{ __html: p }}
+                    />
+                  ))
+                : <p className="text-lg text-gray-300 leading-relaxed">{aboutData.description}</p>
+              }
             </div>
           </div>
 
