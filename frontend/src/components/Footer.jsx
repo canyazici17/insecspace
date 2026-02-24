@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Mail, MapPin, Phone, Linkedin, Twitter, Facebook, Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -8,6 +9,9 @@ import { newsletterSignup } from '../data/mockData';
 const Footer = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const location = useLocation();
+  const path = location?.pathname || '/';
+  const showNewsletter = path === '/' || path === '/registration';
 
   const handleNewsletterSubmit = async (e) => {
     e.preventDefault();
@@ -40,42 +44,44 @@ const Footer = () => {
 
   return (
     <footer id="contact" className="relative bg-black border-t border-cyan-500/30">
-      {/* Newsletter Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-8 md:p-12 backdrop-blur-sm">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 uppercase">
-              Stay Updated
-            </h3>
-            <p className="text-gray-400 mb-8 text-lg">
-              Subscribe to our newsletter for the latest updates on INSECSPACE'2026
-            </p>
-            
-            {/* Newsletter Form */}
-            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-grow bg-black/50 border-cyan-500/30 text-white placeholder:text-gray-500 focus:border-cyan-400 h-12"
-              />
-              <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 h-12 font-semibold uppercase tracking-wider shadow-lg shadow-cyan-500/50 transition-all duration-300 hover:shadow-cyan-500/70"
-              >
-                {isSubmitting ? 'Subscribing...' : (
-                  <>
-                    Subscribe
-                    <Send className="ml-2 w-4 h-4" />
-                  </>
-                )}
-              </Button>
-            </form>
+      {/* Newsletter Section - only show on Home and Registration pages */}
+      {showNewsletter && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-8 md:p-12 backdrop-blur-sm">
+            <div className="max-w-3xl mx-auto text-center">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 uppercase">
+                Stay Updated
+              </h3>
+              <p className="text-gray-400 mb-8 text-lg">
+                Subscribe to our newsletter for the latest updates on INSECSPACE'2026
+              </p>
+
+              {/* Newsletter Form */}
+              <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-grow bg-black/50 border-cyan-500/30 text-white placeholder:text-gray-500 focus:border-cyan-400 h-12"
+                />
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 h-12 font-semibold uppercase tracking-wider shadow-lg shadow-cyan-500/50 transition-all duration-300 hover:shadow-cyan-500/70"
+                >
+                  {isSubmitting ? 'Subscribing...' : (
+                    <>
+                      Subscribe
+                      <Send className="ml-2 w-4 h-4" />
+                    </>
+                  )}
+                </Button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-cyan-500/20">
