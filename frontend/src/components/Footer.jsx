@@ -11,7 +11,8 @@ const Footer = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const location = useLocation();
   const path = location?.pathname || '/';
-  const showNewsletter = path === '/' || path === '/registration';
+  // Show newsletter only on the home page
+  const showNewsletter = path === '/';
 
   const handleNewsletterSubmit = async (e) => {
     e.preventDefault();
