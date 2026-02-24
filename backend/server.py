@@ -9,6 +9,7 @@ from pydantic import BaseModel, Field, ConfigDict
 from typing import List
 import uuid
 from datetime import datetime, timezone
+import zoneinfo
 
 
 ROOT_DIR = Path(__file__).parent
@@ -47,7 +48,7 @@ class Registration(BaseModel):
     surname: str
     email: str
     phone: str
-    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(zoneinfo.ZoneInfo("Europe/Istanbul")))
 
 
 class RegistrationCreate(BaseModel):
