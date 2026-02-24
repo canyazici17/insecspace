@@ -24,13 +24,26 @@ const Registration = () => {
     }
     setSubmitting(true);
     try {
-      // TODO: replace with real API call
-      console.log('Registration data', form);
-      await new Promise((r) => setTimeout(r, 700));
+      // POST to backend API
+      const apiBase = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+      const res = await fetch(`${apiBase}/api/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) {
+        const text = await res.text();
+        throw new Error(text || 'Server error');
+      }
+
+      const data = await res.json();
+      console.log('Registration saved', data);
       toast.success('Registration submitted — we will contact you via email');
       setForm({ name: '', surname: '', email: '', phone: '' });
       setShowForm(false);
     } catch (err) {
+      console.error(err);
       toast.error('Submission failed — please try again');
     } finally {
       setSubmitting(false);

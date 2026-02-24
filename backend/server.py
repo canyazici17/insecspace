@@ -14,10 +14,11 @@ from datetime import datetime, timezone
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection
-mongo_url = os.environ['MONGO_URL']
+# MongoDB connection (use safe defaults for local development)
+mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
 client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+db_name = os.environ.get('DB_NAME', 'insecspace_db')
+db = client[db_name]
 
 # Create the main app without a prefix
 app = FastAPI()
@@ -37,6 +38,24 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+
+class Registration(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    surname: str
+    email: str
+    phone: str
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+
+class RegistrationCreate(BaseModel):
+    name: str
+    surname: str
+    email: str
+    phone: str
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
@@ -53,6 +72,39 @@ async def create_status_check(input: StatusCheckCreate):
     
     _ = await db.status_checks.insert_one(doc)
     return status_obj
+
+
+@api_router.post("/register", response_model=Registration)
+async def create_registration(input: RegistrationCreate):
+    """Create a registration record in MongoDB.
+
+    Expects JSON body with: name, surname, email, phone
+    """
+    reg_dict = input.model_dump()
+    reg_obj = Registration(**reg_dict)
+
+    # Prepare document for MongoDB (serialize timestamp)
+    doc = reg_obj.model_dump()
+    doc['timestamp'] = doc['timestamp'].isoformat()
+
+    collection_name = os.environ.get('REG_COLLECTION', 'registrations')
+    _ = await db[collection_name].insert_one(doc)
+    return reg_obj
+
+
+@api_router.get("/registrations", response_model=List[Registration])
+async def list_registrations():
+    """List registrations (for local verification). Excludes MongoDB _id field."""
+    collection_name = os.environ.get('REG_COLLECTION', 'registrations')
+    regs = await db[collection_name].find({}, {"_id": 0}).to_list(1000)
+    # Convert timestamp strings back to datetimes if necessary
+    for r in regs:
+        if isinstance(r.get('timestamp'), str):
+            try:
+                r['timestamp'] = datetime.fromisoformat(r['timestamp'])
+            except Exception:
+                pass
+    return regs
 
 @api_router.get("/status", response_model=List[StatusCheck])
 async def get_status_checks():
