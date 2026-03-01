@@ -1,4 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+const whySponsorText = `Why Should You Sponsor INSECSPACE 2026?`;
+const whySponsorDesc = `INSECSPACE 2026 is a high–value, strategically significant conference positioned at the intersection of space and satellite technologies, innovation, and cyber security.`;
+const whySponsorBullets = [
+  'Gain direct access to the right target audience, including key decision-makers and industry leaders',
+  'Enhance brand visibility and strengthen corporate image in a high-profile strategic environment',
+  'Establish sectoral leadership and trust within the space, defense, and cyber security ecosystem',
+  'Create new partnerships and collaboration opportunities',
+  'Invest in the future by supporting secure and sustainable space technologies',
+];
+const whySponsorFooter = `Sponsoring INSECSPACE 2026 positions your organization at the forefront of innovation, security, and strategic dialogue shaping the future of space`;
 
 const SponsorsSection = ({ sponsors }) => {
   const tierColors = {
@@ -26,6 +38,30 @@ const SponsorsSection = ({ sponsors }) => {
   return (
     <section id="sponsors" className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Why Sponsor - EN ÜSTE EKLENDİ */}
+        <div className="max-w-3xl mx-auto mb-8 p-8 rounded-2xl border border-cyan-700 bg-gradient-to-br from-black via-blue-950 to-cyan-900 text-center shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4 tracking-tight font-sans">{whySponsorText}</h2>
+          <p className="text-gray-200 text-base md:text-lg mb-6 font-sans leading-relaxed">{whySponsorDesc}</p>
+          <ul className="text-gray-300 text-left mx-auto mb-6 max-w-xl list-disc list-inside space-y-2 font-sans text-base md:text-lg">
+            {whySponsorBullets.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+          <p className="text-cyan-300 text-base md:text-lg font-semibold font-sans leading-relaxed">{whySponsorFooter}</p>
+        </div>
+        {/* Interested in Sponsoring - HEMEN ALTINA */}
+        <div className="max-w-2xl mx-auto mb-10 p-8 rounded-xl border border-cyan-700 bg-gradient-to-br from-black via-blue-950 to-cyan-900 text-center shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Interested in Sponsoring?</h2>
+          <p className="text-gray-300 mb-6">Join our prestigious sponsors and showcase your brand to the global space security community</p>
+          <Link
+            to="/contact"
+            replace
+            onClick={() => window.scrollTo(0, 0)}
+            className="inline-block px-8 py-3 rounded-lg bg-cyan-500 text-white font-semibold text-lg shadow-md hover:bg-cyan-600 transition-all duration-200"
+          >
+            CONTACT US
+          </Link>
+        </div>
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold uppercase mb-4">
@@ -84,21 +120,6 @@ const SponsorsSection = ({ sponsors }) => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Become a Sponsor CTA */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Interested in Sponsoring?
-            </h3>
-            <p className="text-gray-400 mb-6 max-w-xl">
-              Join our prestigious sponsors and showcase your brand to the global space security community
-            </p>
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-semibold uppercase tracking-wider shadow-lg shadow-cyan-500/50 transition-all duration-300 hover:shadow-cyan-500/70 hover:scale-105">
-              Contact Us
-            </button>
-          </div>
         </div>
       </div>
     </section>
