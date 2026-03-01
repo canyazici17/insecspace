@@ -82,24 +82,40 @@ const SponsorsSection = ({ sponsors }) => {
               {/* Tier Title */}
               <div className="text-center mb-8">
                 <h3 className={`${tierSizes[tier]} font-bold uppercase tracking-wider bg-gradient-to-r ${tierColors[tier]} bg-clip-text text-transparent`}>
-                  {tier} Sponsors
+                  {tier === 'platinum' ? 'Strategic Partner' : tier === 'gold' ? 'BRONZE SPONSORS' : tier === 'silver' ? 'Media Sponsor' : tier === 'bronze' ? 'Supporters' : `${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors`}
                 </h3>
               </div>
 
               {/* Sponsors Grid */}
-              <div className={`grid gap-6 ${
+              <div className={`grid gap-8 md:gap-12 ${
                 tier === 'platinum' ? 'md:grid-cols-2' : 
-                tier === 'gold' ? 'md:grid-cols-3' : 
-                'md:grid-cols-4'
-              }`}>
-                {tierSponsors.map((sponsor) => (
+                tier === 'gold' ? 'md:grid-cols-2' : 
+                tier === 'silver' ? 'md:grid-cols-2' :
+                'md:grid-cols-3'
+              }`}> 
+                {tierSponsors.map((sponsor, idx) => (
                   <div
                     key={sponsor.id}
-                    className="group relative bg-gradient-to-br from-gray-900 to-black border border-cyan-500/30 rounded-lg p-8 hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20"
+                    className="group relative bg-gradient-to-br from-gray-900 to-black border border-cyan-500/30 rounded-2xl p-10 flex flex-col items-center justify-center hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20"
                   >
                     {/* Sponsor Name (Placeholder Logo) */}
-                    <div className="flex items-center justify-center h-24">
-                      <div className="text-center">
+                    <div className="flex items-center justify-center h-24 w-full">
+                      <div className="text-center w-full">
+                        {tier === 'platinum' && idx === 0 ? (
+                          <img src="/turkiye-uzay-ajansi-tua-logo-png_seeklogo-397524.png" alt="TUA Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'platinum' && idx === 1 ? (
+                          <img src="/BilgiTeknolojileri.png" alt="BTK Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'platinum' && idx === 2 ? (
+                          <img src="/türksat.jpg" alt="TÜRKSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'platinum' && idx === 3 ? (
+                          <img src="/Tübitak.jpeg" alt="TÜBİTAK Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'platinum' && idx === 4 ? (
+                          <img src="/TUYAD.png" alt="TUYAD Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
                         <div className={`font-bold uppercase tracking-wider text-gray-400 group-hover:bg-gradient-to-r group-hover:${tierColors[tier]} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
                           tier === 'platinum' ? 'text-2xl' :
                           tier === 'gold' ? 'text-xl' :
@@ -110,7 +126,6 @@ const SponsorsSection = ({ sponsors }) => {
                         </div>
                       </div>
                     </div>
-
                     {/* Decorative Corner */}
                     <div className="absolute top-2 right-2">
                       <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${tierColors[tier]} opacity-50 group-hover:opacity-100 transition-opacity`} />

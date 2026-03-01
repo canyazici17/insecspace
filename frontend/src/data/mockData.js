@@ -137,8 +137,11 @@ export const conferenceData = {
   ],
 
   sponsors: [
-    { id: 1, name: "SpaceTech Global", tier: "platinum" },
-    { id: 2, name: "AeroSecure", tier: "platinum" },
+    { id: 1, name: "Türkiye Uzay Ajansı (TUA)", tier: "platinum" },
+    { id: 2, name: "Bilgi Teknolojileri ve İletişim Kurumu (BTK)", tier: "platinum" },
+    { id: 9, name: "TÜRKSAT", tier: "platinum" },
+    { id: 10, name: "TÜBİTAK", tier: "platinum" },
+    { id: 11, name: "TUYAD", tier: "platinum" },
     { id: 3, name: "OrbitGuard Inc.", tier: "gold" },
     { id: 4, name: "Cosmic Defense Labs", tier: "gold" },
     { id: 5, name: "Stellar Systems", tier: "silver" },
