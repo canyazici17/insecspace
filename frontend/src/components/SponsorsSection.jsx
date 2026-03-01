@@ -116,6 +116,21 @@ const SponsorsSection = ({ sponsors }) => {
                         {tier === 'platinum' && idx === 4 ? (
                           <img src="/TUYAD.png" alt="TUYAD Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
+                        {tier === 'gold' && idx === 0 ? (
+                          <img src="/SPACELİS.jpeg" alt="SPACELİS Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'gold' && idx === 1 ? (
+                          <img src="/imarine.jpeg" alt="iMarine Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'gold' && idx === 2 ? (
+                          <img src="/MON IN.jpeg" alt="MON IN Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'gold' && idx === 3 ? (
+                          <img src="/RSAT.jpeg" alt="RSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'silver' && idx === 0 ? (
+                          <img src="/Media.jpeg" alt="Media Sponsor Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
                         <div className={`font-bold uppercase tracking-wider text-gray-400 group-hover:bg-gradient-to-r group-hover:${tierColors[tier]} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
                           tier === 'platinum' ? 'text-2xl' :
                           tier === 'gold' ? 'text-xl' :
