@@ -4,6 +4,17 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 const Navigation = () => {
+    const menuItems = [
+      { label: 'Home', to: '/' },
+      { label: 'About', to: '/about' },
+      { label: 'Programme', to: '/programme' },
+      { label: 'Sponsorship', to: '/sponsorship' },
+      { label: 'Registration', to: '/registration' },
+      { label: 'Venue', to: '/venue' },
+      { label: 'COMMITTEE', to: '/comittee' },
+      { label: 'Contact', to: '/contact', tight: true },
+      { label: 'SPEAKERS', to: '/speakers', tight: true }
+    ];
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -48,17 +59,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {[
-              { label: 'Home', to: '/' },
-              { label: 'About', to: '/about' },
-              { label: 'Programme', to: '/programme' },
-              { label: 'Sponsorship', to: '/sponsorship' },
-              { label: 'Registration', to: '/registration' },
-              { label: 'Venue', to: '/venue' },
-              { label: 'Media Center', to: '/media' },
-              { label: 'Contact', to: '/contact', tight: true },
-              { label: 'Committee', to: '/committee', tight: true }
-            ].map((item) => (
+            {menuItems.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
@@ -86,17 +87,7 @@ const Navigation = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-cyan-500/20">
           <div className="px-4 py-6 space-y-4">
-            {[
-              { label: 'Home', to: '/' },
-              { label: 'About', to: '/about' },
-              { label: 'Programme', to: '/programme' },
-              { label: 'Sponsorship', to: '/sponsorship' },
-              { label: 'Registration', to: '/registration' },
-              { label: 'Venue', to: '/venue' },
-              { label: 'Media Center', to: '/media' },
-              { label: 'Contact', to: '/contact', tight: true },
-              { label: 'Committee', to: '/committee', tight: true }
-            ].map((item) => (
+            {menuItems.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}

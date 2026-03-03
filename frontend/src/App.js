@@ -28,9 +28,9 @@ function App() {
           <Route path="/sponsorship" element={<Sponsorship />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/venue" element={<Venue />} />
-          <Route path="/media" element={<MediaCenter />} />
+          <Route path="/comittee" element={<MediaCenter />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/committee" element={<Committee />} />
+          <Route path="/speakers" element={<Committee />} />
         </Routes>
       </main>
       <Footer />

@@ -1,24 +1,27 @@
 import React from 'react';
 
-const SpeakersSection = ({ speakers }) => {
+const SpeakersSection = ({ speakers, hideHeader }) => {
+  const isThreeOrLess = speakers.length <= 3;
   return (
-    <section id="speakers" className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section id="speakers" className="relative pt-10 pb-20 bg-gradient-to-b from-black via-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold uppercase mb-4">
-            <span className="bg-gradient-to-r from-white to-cyan-400 bg-clip-text text-transparent">
-              Featured Speakers
-            </span>
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-4" />
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Learn from industry leaders and pioneers shaping the future of space security
-          </p>
-        </div>
+        {!hideHeader && (
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold uppercase mb-4">
+              <span className="bg-gradient-to-r from-white to-cyan-400 bg-clip-text text-transparent">
+                Featured Speakers
+              </span>
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-4" />
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              Learn from industry leaders and pioneers shaping the future of space security
+            </p>
+          </div>
+        )}
 
         {/* Speakers Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className={`grid gap-8 ${isThreeOrLess ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center place-items-center' : 'sm:grid-cols-2 lg:grid-cols-4'}`}>
           {speakers.map((speaker) => (
             <div
               key={speaker.id}
