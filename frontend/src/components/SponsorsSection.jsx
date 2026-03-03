@@ -62,6 +62,17 @@ const SponsorsSection = ({ sponsors }) => {
             CONTACT US
           </Link>
         </div>
+        {/* SPONSORSHIP PROSPECTUS BUTTON */}
+        <div className="max-w-2xl mx-auto mb-10 flex justify-center">
+          <a
+            href="/INSECSPACE-SPONSORSHIP.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold text-lg shadow-md hover:from-cyan-700 hover:to-blue-700 transition-all duration-200 border border-cyan-400 uppercase tracking-wider"
+          >
+            SPONSORSHIP PROSPECTUS
+          </a>
+        </div>
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold uppercase mb-4">
@@ -130,6 +141,36 @@ const SponsorsSection = ({ sponsors }) => {
                         ) : null}
                         {tier === 'silver' && idx === 0 ? (
                           <img src="/Media.jpeg" alt="Media Sponsor Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 0 ? (
+                          <img src="/USTIL.jpeg" alt="USTIL Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 1 ? (
+                          <img src="/TÜYAFED.jpeg" alt="TÜYAFED Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 2 ? (
+                          <img src="/TOSYÖV.jpeg" alt="TOSYÖV Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 3 ? (
+                          <img src="/KARNYUZ.jpeg" alt="KARNYUZ Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 4 ? (
+                          <img src="/MCT.jpeg" alt="MCT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 5 ? (
+                          <img src="/İKP.jpeg" alt="İKP Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 6 ? (
+                          <img src="/TDTV.jpeg" alt="TDTV Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 7 ? (
+                          <img src="/INTER.jpeg" alt="INTER Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 8 ? (
+                          <img src="/SIGNATURE.jpeg" alt="SIGNATURE Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 9 ? (
+                          <img src="/ECUADOR.jpeg" alt="ECUADOR Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         <div className={`font-bold uppercase tracking-wider text-gray-400 group-hover:bg-gradient-to-r group-hover:${tierColors[tier]} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
                           tier === 'platinum' ? 'text-2xl' :

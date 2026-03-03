@@ -140,16 +140,23 @@ export const conferenceData = {
     { id: 1, name: "Türkiye Uzay Ajansı (TUA)", tier: "platinum" },
     { id: 2, name: "Bilgi Teknolojileri ve İletişim Kurumu (BTK)", tier: "platinum" },
     { id: 9, name: "TÜRKSAT", tier: "platinum" },
-    { id: 10, name: "TÜBİTAK", tier: "platinum" },
+    { id: 10, name: "TÜBİTAK-UZAY", tier: "platinum" },
     { id: 11, name: "TUYAD", tier: "platinum" },
     { id: 3, name: "SPACELİS", tier: "gold" },
     { id: 4, name: "İMarine", tier: "gold" },
     { id: 12, name: "MON-IN", tier: "gold" },
     { id: 13, name: "RSAT", tier: "gold" },
     { id: 5, name: "MEDİA", tier: "silver" },
-    { id: 6, name: "Orbital Analytics", tier: "silver" },
-    { id: 7, name: "SpaceNet Security", tier: "silver" },
-    { id: 8, name: "Quantum Aerospace", tier: "bronze" }
+    { id: 6, name: "İTÜ-USTTL", tier: "bronze" },
+    { id: 7, name: "TÜYAFED", tier: "bronze" },
+    { id: 14, name: "TOSYÖV", tier: "bronze" },
+    { id: 15, name: "KAMUYZ", tier: "bronze" },
+    { id: 16, name: "MCT", tier: "bronze" },
+    { id: 17, name: "İhracat Kapısı Platformu", tier: "bronze" },
+    { id: 18, name: "TDTV", tier: "bronze" },
+    { id: 19, name: "INTERPLANETARY", tier: "bronze" },
+    { id: 20, name: "SIGNATURE", tier: "bronze" },
+    { id: 8, name: "Ecuadorian Space Agency", tier: "bronze" }
   ]
 };
 
