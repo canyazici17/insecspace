@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { Mail, MapPin, Phone, Linkedin, Twitter, Facebook, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Linkedin, Instagram, Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { toast } from 'sonner';
@@ -104,17 +104,19 @@ const Footer = () => {
             </h4>
             <div className="flex gap-4">
               {[
-                { Icon: Twitter, label: 'Twitter' },
-                { Icon: Linkedin, label: 'LinkedIn' },
-                { Icon: Facebook, label: 'Facebook' }
-              ].map(({ Icon, label }) => (
-                <button
+                { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/insecspace?igsh=MXhubHI1ZzlpaHczZA==' },
+                { Icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/insecspace-platform-2023723a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' }
+              ].map(({ Icon, label, href }) => (
+                <a
                   key={label}
                   aria-label={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-gradient-to-br from-gray-900 to-black border border-cyan-500/30 rounded-lg flex items-center justify-center hover:border-cyan-400 hover:bg-cyan-500/10 transition-all duration-300 group"
                 >
                   <Icon className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-colors" />
-                </button>
+                </a>
               ))}
             </div>
           </div>
