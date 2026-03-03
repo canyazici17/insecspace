@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,7 +20,10 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavClick = () => setIsMobileMenuOpen(false);
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <nav
@@ -47,14 +56,14 @@ const Navigation = () => {
               { label: 'Registration', to: '/registration' },
               { label: 'Venue', to: '/venue' },
               { label: 'Media Center', to: '/media' },
-              { label: 'Contact', to: '/contact' },
-              { label: 'Committee', to: '/committee' }
+              { label: 'Contact', to: '/contact', tight: true },
+              { label: 'Committee', to: '/committee', tight: true }
             ].map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={handleNavClick}
-                className="text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider px-3 mx-1"
+                className={`text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider ${item.tight ? 'px-2 mx-0' : 'px-3 mx-1'}`}
               >
                 {item.label}
               </Link>
@@ -85,14 +94,14 @@ const Navigation = () => {
               { label: 'Registration', to: '/registration' },
               { label: 'Venue', to: '/venue' },
               { label: 'Media Center', to: '/media' },
-              { label: 'Contact', to: '/contact' },
-              { label: 'Committee', to: '/committee' }
+              { label: 'Contact', to: '/contact', tight: true },
+              { label: 'Committee', to: '/committee', tight: true }
             ].map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={handleNavClick}
-                className="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider py-2 px-3"
+                className={`text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider ${item.tight ? 'px-2 mx-0' : 'px-3 mx-1'}`}
               >
                 {item.label}
               </Link>
