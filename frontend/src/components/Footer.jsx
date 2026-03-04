@@ -84,15 +84,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400 hover:text-cyan-400 transition-colors">
                 <Mail className="w-5 h-5 text-cyan-400" />
-                <span>info@insecspace2026.org</span>
+                <span>info@insecspace.org.tr</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400 hover:text-cyan-400 transition-colors">
                 <Phone className="w-5 h-5 text-cyan-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+90 532 4155777</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400 hover:text-cyan-400 transition-colors">
-                <MapPin className="w-5 h-5 text-cyan-400" />
-                <span>Information and Communication Technologies Authority (BTK) Conference Hall</span>
+                <MapPin className="w-10 h-10 text-cyan-400" />
+                <span>Kızılırmak Mahallesi 1443.Cadde 1071 Usta Plaza No:25B/8 Çankaya /Ankara-Türkiye  PK: 06510</span>
               </div>
             </div>
           </div>
