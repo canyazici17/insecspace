@@ -50,59 +50,80 @@ export const conferenceData = {
   speakers: [
     {
       id: 1,
-      name: "Dr. Amira Hassan",
-      title: "Chief Satellite Security Officer, SpaceTech Global",
-      image: "https://images.pexels.com/photos/33871730/pexels-photo-33871730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      name: "Mehmet Ali Yazıcı",
+      title: "INSECSPACE Chairman",
+      image: "/Comitte22.jpeg",
       bio: "Leading expert in satellite cybersecurity with 15+ years experience"
     },
     {
       id: 2,
-      name: "Sarah Chen",
-      title: "Director of Space Innovation, AeroSecure",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMGhlYWRzaG90fGVufDB8fHx8MTc3MTc2ODE1Mnww&ixlib=rb-4.1.0&q=85",
+      name: "Prof.Dr.Rüstem Alim Aslan",
+      title: "INSECSPACE Member",
+      image: "\Comite2.jpeg",
       bio: "Pioneer in aerospace security protocols and quantum encryption"
     },
     {
       id: 3,
-      name: "Dr. Marcus Johnson",
-      title: "Professor of Aerospace Engineering, MIT",
-      image: "https://images.unsplash.com/photo-1642257859842-c95f9fa8121d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMGhlYWRzaG90fGVufDB8fHx8MTc3MTc2ODE1Mnww&ixlib=rb-4.1.0&q=85",
+      name: "Ali Baygeldi",
+      title: "INSECSPACE Member",
+      image: "\Comite3.jpeg",
       bio: "Renowned researcher in spacecraft security and defense systems"
     },
     {
       id: 4,
-      name: "James Wilson",
-      title: "VP of Space Operations, OrbitGuard Inc.",
-      image: "https://images.pexels.com/photos/14589344/pexels-photo-14589344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      name: "DR. Ejder Varol",
+      title: "CEO AT iMARINE",
+      image: "\Konuşmacı4.jpeg",
       bio: "Expert in operational security for commercial space missions"
     },
     {
       id: 5,
-      name: "Dr. Robert Kim",
-      title: "Head of Research, Cosmic Defense Labs",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMGhlYWRzaG90fGVufDB8fHx8MTc3MTc2ODE1Mnww&ixlib=rb-4.1.0&q=85",
+      name: "Dr. Güler Koçak",
+      title: "CEO AT SPACELIS",
+      image: "\Konuşmacı5.jpeg",
       bio: "Specialist in space debris mitigation and collision avoidance"
     },
     {
       id: 6,
-      name: "Elena Rodriguez",
-      title: "Security Architect, Stellar Systems",
-      image: "https://images.unsplash.com/photo-1627161683077-e34782c24d81?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhlYWRzaG90fGVufDB8fHx8MTc3MTc2ODE1Mnww&ixlib=rb-4.1.0&q=85",
+      name: "Halit Mirahmetoğlu",
+      title: "Director at Space Agenda",
+      image: "\Konuşmacı6.jpeg",
       bio: "Authority on secure satellite communications and encryption"
     },
     {
       id: 7,
-      name: "Dr. Lisa Chang",
-      title: "Data Security Lead, Orbital Analytics",
-      image: "https://images.pexels.com/photos/1181336/pexels-photo-1181336.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      name: "Kazım Efendioğlu",
+      title: "Executive Coordinator at ULAK Haberleşme",
+      image: "\Konuşmacı7.jpeg",
       bio: "Expert in space-based data protection and secure transmissions"
     },
     {
       id: 8,
-      name: "Maya Patel",
-      title: "Infrastructure Engineer, SpaceNet Security",
-      image: "https://images.pexels.com/photos/1181341/pexels-photo-1181341.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      name: "M. Mehmet Nefes",
+      title: "Director / Chairman of the Board at TÜBİTAK-Space",
+      image: "\Konuşmacı8.jpeg",
       bio: "Specialist in space infrastructure resilience and redundancy"
+    },
+    {
+      id: 9,
+      name: "Dr. Mustafa Helvacı",
+      title: "Scientific Researcher at TUBITAK-Space / Executive Board Member at TÜRKSAT",
+      image: "\Konuşmacı9.jpeg",
+      bio: "Expert in space-based data protection and secure transmissions"
+    },
+    {
+      id: 10,
+      name: "Ömer Abdullah Karagözoğlu",
+      title: "President of Turkish Information Technologies and Communication Authority (BTK)",
+      image: "\Konuşmacı10.jpeg",
+      bio: "Expert in space-based data protection and secure transmissions"
+    },
+    {
+      id: 11,
+      name: "Dr. Selman Demirel",
+      title: "WP of Satellite Operations at TURKSAT",
+      image: "\Konuşmacı11.jpeg",
+      bio: "Expert in space-based data protection and secure transmissions"
     }
   ],
 

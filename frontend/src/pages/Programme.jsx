@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Programme = () => (
-  <section className="py-16 min-h-screen bg-gradient-to-br from-black via-blue-950 to-black flex items-center justify-center">
+  <section className="py-16 min-h-screen bg-gradient-to-b from-black via-gray-900 to-black flex items-center justify-center">
     <div className="w-full max-w-3xl px-4">
       <div className="mb-8">
         <h1 className="text-3xl md:text-4xl font-extrabold text-white uppercase tracking-widest text-center">INSECSPACE’2026 CONFERENCE PROGRAM</h1>

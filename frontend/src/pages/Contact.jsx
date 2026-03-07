@@ -25,7 +25,7 @@ const contacts = [
 ];
 
 const Contact = () => (
-  <section className="py-24 min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-blue-950 to-black">
+  <section className="py-24 min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black">
     <div className="max-w-4xl w-full px-4 text-center">
       <h1 className="text-4xl md:text-5xl font-extrabold mb-10 text-white drop-shadow-lg tracking-tight">Contact</h1>
       <div className="grid gap-10 md:grid-cols-3">
