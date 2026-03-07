@@ -91,7 +91,7 @@ const SponsorsSection = ({ sponsors }) => {
           {Object.entries(groupedSponsors).map(([tier, tierSponsors]) => (
             <div key={tier}>
               {/* Tier Title */}
-              <div className="text-center mb-8">
+              <div className={`text-center${tier === 'silver' ? ' mt-20 mb-8' : ''}${tier === 'gold' ? ' mt-20 mb-8' : ''}${tier === 'bronze' ? ' mt-20 mb-8' : tier !== 'silver' && tier !== 'gold' && tier !== 'bronze' ? ' mb-8' : ''}`}> 
                 <h3 className={`${tierSizes[tier]} font-bold uppercase tracking-wider bg-gradient-to-r ${tierColors[tier]} bg-clip-text text-transparent`}>
                   {tier === 'platinum' ? 'Strategic Partner' : tier === 'gold' ? 'BRONZE SPONSORS' : tier === 'silver' ? 'Media Sponsor' : tier === 'bronze' ? 'Supporters' : `${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors`}
                 </h3>
