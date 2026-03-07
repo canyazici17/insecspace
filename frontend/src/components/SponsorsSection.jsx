@@ -50,7 +50,7 @@ const SponsorsSection = ({ sponsors }) => {
           <p className="text-cyan-300 text-base md:text-lg font-semibold font-sans leading-relaxed">{whySponsorFooter}</p>
         </div>
         {/* Interested in Sponsoring - HEMEN ALTINA */}
-        <div className="max-w-2xl mx-auto mb-10 p-8 rounded-xl border border-cyan-700 bg-gradient-to-br from-black via-blue-950 to-cyan-900 text-center shadow-lg">
+        <div className="max-w-3xl mx-auto mb-10 p-8 rounded-xl border border-cyan-700 bg-gradient-to-br from-black via-blue-950 to-cyan-900 text-center shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Interested in Sponsoring?</h2>
           <p className="text-gray-300 mb-6">Join our prestigious sponsors and showcase your brand to the global space security community</p>
           <Link
