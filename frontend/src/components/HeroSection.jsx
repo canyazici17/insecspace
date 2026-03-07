@@ -97,7 +97,7 @@ const HeroSection = ({ heroData, eventDate, showContent = false }) => {
           </p>
 
           <p className="text-lg sm:text-xl mb-4">
-            at the <span className="font-bold">Information and Communication Technologies Authority (BTK) Conference Hall</span>,
+            at the <span className="font-bold">Information and Communication Technologies Authority (BTK) Conference&nbsp;Hall</span>,
           </p>
 
           <p className="text-lg sm:text-xl italic mb-8">

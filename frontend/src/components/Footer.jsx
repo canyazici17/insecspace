@@ -65,9 +65,9 @@ const Footer = () => {
 
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-cyan-500/20">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-12 justify-items-center items-start">
           {/* About */}
-          <div>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left md:ml-8">
             <h4 className="text-2xl font-bold bg-gradient-to-r from-white to-cyan-400 bg-clip-text text-transparent mb-4">
               INSECSPACE'26
             </h4>
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left md:ml-16">
             <h4 className="text-xl font-bold text-white mb-4 uppercase tracking-wider">
               Contact Us
             </h4>
@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h4 className="text-xl font-bold text-white mb-4 uppercase tracking-wider">
               Follow Us
             </h4>
