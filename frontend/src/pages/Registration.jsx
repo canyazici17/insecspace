@@ -7,6 +7,8 @@ const Registration = () => {
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState({ name: '', surname: '', email: '', phone: '', title: '', organization: '' });
   const [submitting, setSubmitting] = useState(false);
+  const [consent, setConsent] = useState(false);
+  const [consentError, setConsentError] = useState("");
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -21,6 +23,12 @@ const Registration = () => {
     if (!validate()) {
       toast.error('Please fill all fields with valid information');
       return;
+    }
+    if (!consent) {
+      setConsentError('Please read and accept the Privacy Notice to proceed with registration.');
+      return;
+    } else {
+      setConsentError("");
     }
     setSubmitting(true);
     try {
@@ -41,6 +49,8 @@ const Registration = () => {
       console.log('Registration saved', data);
       toast.success('Registration submitted — we will contact you via email');
       setForm({ name: '', surname: '', email: '', phone: '', title: '', organization: '' });
+      setConsent(false);
+      setConsentError("");
       setShowForm(false);
     } catch (err) {
       console.error(err);
@@ -77,6 +87,31 @@ const Registration = () => {
               <Input name="email" type="email" value={form.email} onChange={handleChange} placeholder="Email" />
               <Input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone number" />
 
+              <div className="flex flex-col gap-1 mb-2">
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="privacy-consent"
+                    checked={consent}
+                    onChange={e => setConsent(e.target.checked)}
+                    className="mr-2 h-4 w-4 accent-cyan-500"
+                  />
+                  <label htmlFor="privacy-consent" className="text-sm text-gray-700 select-none">
+                    I have read and understood the <span className="font-semibold">Privacy Notice</span> and consent to the processing of my personal data for the purposes stated above.
+                  </label>
+                </div>
+                {consentError && (
+                  <span className="text-sm text-red-600 mt-1">{consentError}</span>
+                )}
+                <a
+                  href="/INSECSPACE-KVKK-PRIVACY-NOTICE.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-cyan-700 underline hover:text-cyan-900 mt-2"
+                >
+                  Please review the Personal Data Protection and Privacy Notice.
+                </a>
+              </div>
               <div className="flex justify-end gap-4">
                 <Button type="button" variant="ghost" onClick={() => setShowForm(false)} className="text-gray-400">Cancel</Button>
                 <Button type="submit" disabled={submitting} className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
