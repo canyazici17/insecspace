@@ -167,7 +167,7 @@ export const conferenceData = {
     { id: 4, name: "İMarine", tier: "gold" },
     { id: 12, name: "MON-IN", tier: "gold" },
     { id: 13, name: "RSAT", tier: "gold" },
-    { id: 5, name: "MEDİA", tier: "silver" },
+    { id: 5, name: " ICT MEDIA", tier: "silver" },
     { id: 6, name: "İTÜ-USTTL", tier: "bronze" },
     { id: 7, name: "TÜYAFED", tier: "bronze" },
     { id: 14, name: "TOSYÖV", tier: "bronze" },
