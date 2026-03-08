@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
@@ -18,6 +19,8 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const [showRegModal, setShowRegModal] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,6 +40,7 @@ const Navigation = () => {
   };
 
   return (
+    <>
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
@@ -58,17 +62,25 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                onClick={handleNavClick}
-                className={`text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider ${item.tight ? 'px-2 mx-0' : 'px-3 mx-1'}`}
-              >
-                {item.label}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center space-x-8 w-full">
+            <div className="flex items-center space-x-8 flex-1">
+              {menuItems.map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  onClick={handleNavClick}
+                  className={`text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider ${item.tight ? 'px-2 mx-0' : 'px-3 mx-1'}`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+            <button
+              onClick={() => setShowRegModal(true)}
+              className="ml-8 px-4 py-1.5 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold shadow-md hover:from-cyan-600 hover:to-blue-700 transition-all duration-200 border border-cyan-400 uppercase tracking-wider text-sm"
+            >
+              Register Now
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -101,6 +113,27 @@ const Navigation = () => {
         </div>
       )}
     </nav>
+    {/* Registration Modal */}
+    {showRegModal && (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+        <div className="bg-white rounded-xl shadow-2xl max-w-lg w-full p-8 relative">
+          <button
+            className="absolute top-3 right-3 text-gray-400 hover:text-cyan-600 text-2xl font-bold"
+            onClick={() => setShowRegModal(false)}
+            aria-label="Close"
+          >
+            ×
+          </button>
+          {/* Registration form embed */}
+          <iframe
+            src="/registration"
+            title="Registration"
+            className="w-full h-[600px] border-none rounded-lg"
+          />
+        </div>
+      </div>
+    )}
+    </>
   );
 };
 
