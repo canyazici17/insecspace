@@ -5,13 +5,13 @@ import { toast } from 'sonner';
 
 const Registration = () => {
   const [showForm, setShowForm] = useState(false);
-  const [form, setForm] = useState({ name: '', surname: '', email: '', phone: '' });
+  const [form, setForm] = useState({ name: '', surname: '', email: '', phone: '', title: '', organization: '' });
   const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const validate = () => {
-    if (!form.name || !form.surname || !form.email || !form.phone) return false;
+    if (!form.name || !form.surname || !form.email || !form.phone || !form.title || !form.organization) return false;
     const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRe.test(form.email);
   };
@@ -40,7 +40,7 @@ const Registration = () => {
       const data = await res.json();
       console.log('Registration saved', data);
       toast.success('Registration submitted — we will contact you via email');
-      setForm({ name: '', surname: '', email: '', phone: '' });
+      setForm({ name: '', surname: '', email: '', phone: '', title: '', organization: '' });
       setShowForm(false);
     } catch (err) {
       console.error(err);
@@ -65,9 +65,14 @@ const Registration = () => {
         {showForm && (
           <div className="mt-8 bg-gradient-to-r from-cyan-500/5 to-blue-500/5 border border-cyan-500/20 rounded-lg p-8">
             <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-4 text-left">
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <Input name="name" value={form.name} onChange={handleChange} placeholder="Name" />
                 <Input name="surname" value={form.surname} onChange={handleChange} placeholder="Surname" />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Input name="title" value={form.title} onChange={handleChange} placeholder="Title" />
+                <Input name="organization" value={form.organization} onChange={handleChange} placeholder="Organization" />
               </div>
               <Input name="email" type="email" value={form.email} onChange={handleChange} placeholder="Email" />
               <Input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone number" />

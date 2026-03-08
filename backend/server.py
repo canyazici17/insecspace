@@ -40,6 +40,7 @@ class StatusCheckCreate(BaseModel):
     client_name: str
 
 
+
 class Registration(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
@@ -48,7 +49,10 @@ class Registration(BaseModel):
     surname: str
     email: str
     phone: str
+    title: str
+    organization: str
     timestamp: datetime = Field(default_factory=lambda: datetime.now(zoneinfo.ZoneInfo("Europe/Istanbul")))
+
 
 
 class RegistrationCreate(BaseModel):
@@ -56,6 +60,8 @@ class RegistrationCreate(BaseModel):
     surname: str
     email: str
     phone: str
+    title: str
+    organization: str
 
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
@@ -75,18 +81,21 @@ async def create_status_check(input: StatusCheckCreate):
     return status_obj
 
 
+
 @api_router.post("/register", response_model=Registration)
 async def create_registration(input: RegistrationCreate):
     """Create a registration record in MongoDB.
 
-    Expects JSON body with: name, surname, email, phone
+    Expects JSON body with: name, surname, email, phone, title, organization
     """
     reg_dict = input.model_dump()
+    # logging removed
     reg_obj = Registration(**reg_dict)
 
     # Prepare document for MongoDB (serialize timestamp)
     doc = reg_obj.model_dump()
     doc['timestamp'] = doc['timestamp'].isoformat()
+    # logging removed
 
     collection_name = os.environ.get('REG_COLLECTION', 'registrations')
     _ = await db[collection_name].insert_one(doc)
