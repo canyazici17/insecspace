@@ -53,77 +53,77 @@ export const conferenceData = {
       name: "Mehmet Ali Yazıcı",
       title: "INSECSPACE Chairman",
       image: "/Comitte22.jpeg",
-      bio: "Leading expert in satellite cybersecurity with 15+ years experience"
+      bio: 'linkedin'
     },
     {
       id: 2,
       name: "Prof.Dr.Rüstem Alim Aslan",
-      title: "INSECSPACE Member",
+      title: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University",
       image: "\Comite2.jpeg",
-      bio: "Pioneer in aerospace security protocols and quantum encryption"
+      bio: 'linkedin2'
     },
     {
       id: 3,
       name: "Ali Baygeldi",
-      title: "INSECSPACE Member",
+      title: "Head of Space Systems and Spacecraft Department at Turkish Space Agency (TUA)",
       image: "\Comite3.jpeg",
-      bio: "Renowned researcher in spacecraft security and defense systems"
+      bio: 'linkedin3'
     },
     {
       id: 4,
       name: "DR. Ejder Varol",
       title: "CEO AT iMARINE",
       image: "\Konuşmacı4.jpeg",
-      bio: "Expert in operational security for commercial space missions"
+      bio: 'linkedin4'
     },
     {
       id: 5,
       name: "Dr. Güler Koçak",
       title: "CEO AT SPACELIS",
       image: "\Konuşmacı5.jpeg",
-      bio: "Specialist in space debris mitigation and collision avoidance"
+      bio: 'linkedin5'
     },
     {
       id: 6,
       name: "Halit Mirahmetoğlu",
       title: "Director at Space Agenda",
       image: "\Konuşmacı6.jpeg",
-      bio: "Authority on secure satellite communications and encryption"
+      bio: 'linkedin6'
     },
     {
       id: 7,
       name: "Kazım Efendioğlu",
       title: "Executive Coordinator at ULAK Haberleşme",
       image: "\Konuşmacı7.jpeg",
-      bio: "Expert in space-based data protection and secure transmissions"
+      bio: 'linkedin7'
     },
     {
       id: 8,
       name: "M. Mehmet Nefes",
       title: "Director / Chairman of the Board at TÜBİTAK-Space",
       image: "\Konuşmacı8.jpeg",
-      bio: "Specialist in space infrastructure resilience and redundancy"
+      bio: 'linkedin8'
     },
     {
       id: 9,
       name: "Dr. Mustafa Helvacı",
       title: "Scientific Researcher at TUBITAK-Space / Executive Board Member at TÜRKSAT",
       image: "\Konuşmacı9.jpeg",
-      bio: "Expert in space-based data protection and secure transmissions"
+      bio: 'linkedin9'
     },
     {
       id: 10,
       name: "Ömer Abdullah Karagözoğlu",
       title: "President of Turkish Information Technologies and Communication Authority (BTK)",
       image: "\Konuşmacı10.jpeg",
-      bio: "Expert in space-based data protection and secure transmissions"
+      bio: 'linkedin10'
     },
     {
       id: 11,
       name: "Dr. Selman Demirel",
       title: "WP of Satellite Operations at TURKSAT",
       image: "\Konuşmacı11.jpeg",
-      bio: "Expert in space-based data protection and secure transmissions"
+      bio: 'linkedin11'
     }
   ],
 
