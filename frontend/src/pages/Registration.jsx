@@ -33,7 +33,7 @@ const Registration = () => {
     setSubmitting(true);
     try {
       // POST to backend API
-      const apiBase = process.env.REACT_APP_API_URL || 'https://insecspace-ab.vercel.app';
+      const apiBase = process.env.REACT_APP_API_URL || 'https://insecspace.onrender.com';
       const res = await fetch(`${apiBase}/api/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
