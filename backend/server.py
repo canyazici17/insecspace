@@ -15,10 +15,14 @@ import zoneinfo
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection (use safe defaults for local development)
-mongo_url = os.environ.get('MONGO_URL', 'mongodb+srv://ayazicibgd_db_user:ali133297CN@cluster0.x7d95ud.mongodb.net/?appName=Cluster0')
+# MongoDB Atlas connection (explicit, no localhost fallback)
+mongo_url = os.environ.get('MONGO_URL')
+if not mongo_url:
+    raise RuntimeError('MONGO_URL environment variable is not set!')
 client = AsyncIOMotorClient(mongo_url)
-db_name = os.environ.get('DB_NAME', 'insecspace')
+db_name = os.environ.get('DB_NAME')
+if not db_name:
+    raise RuntimeError('DB_NAME environment variable is not set!')
 db = client[db_name]
 
 # Create the main app without a prefix
