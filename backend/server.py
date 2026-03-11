@@ -16,9 +16,9 @@ ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
 # MongoDB connection (use safe defaults for local development)
-mongo_url = os.environ.get('MONGO_URL', 'mongodb+srv://ayazicibgd_db_user:ali133297CN@cluster0.x7d95ud.mongodb.net/insecspace?retryWrites=true&w=majority')
+mongo_url = os.environ.get('MONGO_URL', 'mongodb+srv://ayazicibgd_db_user:ali133297CN@cluster0.x7d95ud.mongodb.net/?appName=Cluster0')
 client = AsyncIOMotorClient(mongo_url)
-db_name = os.environ.get('DB_NAME', 'insecspace_db')
+db_name = os.environ.get('DB_NAME', 'insecspace')
 db = client[db_name]
 
 # Create the main app without a prefix
