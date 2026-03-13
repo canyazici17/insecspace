@@ -98,7 +98,7 @@ const Navigation = () => {
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-cyan-500/20">
-          <div className="px-4 py-6 space-y-4">
+          <div className="px-4 py-6 flex flex-col space-y-4">
             {menuItems.map((item) => (
               <Link
                 key={item.to}
@@ -109,6 +109,12 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
+            <button
+              onClick={() => setShowRegModal(true)}
+              className="w-full mt-4 px-4 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold shadow-md hover:from-cyan-600 hover:to-blue-700 transition-all duration-200 border border-cyan-400 uppercase tracking-wider text-sm"
+            >
+              Register Now
+            </button>
           </div>
         </div>
       )}
