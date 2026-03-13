@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <main className="pt-20">
+      <main className="pt-20 overflow-x-auto">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
