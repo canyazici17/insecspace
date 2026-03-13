@@ -1,11 +1,3 @@
-  // Robust scroll lock for mobile menu
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.classList.add('mobile-menu-open');
-    } else {
-      document.body.classList.remove('mobile-menu-open');
-    }
-  }, [isMobileMenuOpen]);
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
