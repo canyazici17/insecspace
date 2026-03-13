@@ -1,10 +1,3 @@
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-  }, [isMobileMenuOpen]);
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -41,6 +34,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
   const handleNavClick = () => {
     setIsMobileMenuOpen(false);
     window.scrollTo(0, 0);
@@ -76,7 +70,7 @@ const Navigation = () => {
                   key={item.to}
                   to={item.to}
                   onClick={handleNavClick}
-                  className="text-gray-300 hover:text-cyan-400 transition-colors text-xs font-medium uppercase tracking-wider px-2 mx-1"
+                  className={`text-gray-300 hover:text-cyan-400 transition-colors text-xs font-medium uppercase tracking-wider ${item.tight ? 'px-1 mx-0' : 'px-2 mx-1'}`}
                 >
                   {item.label}
                 </Link>
