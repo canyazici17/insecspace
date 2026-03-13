@@ -1,9 +1,9 @@
-  // Prevent background scroll when mobile menu is open
+  // Robust scroll lock for mobile menu
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.classList.add('mobile-menu-open');
     } else {
-      document.body.style.overflow = '';
+      document.body.classList.remove('mobile-menu-open');
     }
   }, [isMobileMenuOpen]);
 import React, { useState, useEffect } from 'react';

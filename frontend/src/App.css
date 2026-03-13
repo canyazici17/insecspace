@@ -1,3 +1,7 @@
+/* Prevent background scroll when mobile menu is open */
+.mobile-menu-open {
+  overflow: hidden !important;
+}
 /* INSECSPACE'2026 Conference Website Styles */
 
 * {
