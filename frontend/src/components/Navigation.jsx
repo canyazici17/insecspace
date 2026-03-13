@@ -49,13 +49,13 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
               to="/"
               onClick={handleNavClick}
-              className="text-2xl font-bold bg-gradient-to-r from-white via-cyan-400 to-blue-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+                className="text-xl font-bold bg-gradient-to-r from-white via-cyan-400 to-blue-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               INSECSPACE'26
             </Link>
@@ -69,7 +69,7 @@ const Navigation = () => {
                   key={item.to}
                   to={item.to}
                   onClick={handleNavClick}
-                  className={`text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider ${item.tight ? 'px-2 mx-0' : 'px-3 mx-1'}`}
+                  className={`text-gray-300 hover:text-cyan-400 transition-colors text-xs font-medium uppercase tracking-wider ${item.tight ? 'px-1 mx-0' : 'px-2 mx-1'}`}
                 >
                   {item.label}
                 </Link>
@@ -77,7 +77,7 @@ const Navigation = () => {
             </div>
             <button
               onClick={() => setShowRegModal(true)}
-              className="ml-8 px-4 py-1.5 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold shadow-md hover:from-cyan-600 hover:to-blue-700 transition-all duration-200 border border-cyan-400 uppercase tracking-wider text-sm"
+              className="ml-4 px-3 py-1 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold shadow-md hover:from-cyan-600 hover:to-blue-700 transition-all duration-200 border border-cyan-400 uppercase tracking-wider text-xs"
             >
               Register Now
             </button>
