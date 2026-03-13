@@ -105,7 +105,7 @@ const Navigation = () => {
                 key={item.to}
                 to={item.to}
                 onClick={handleNavClick}
-                className={`text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider ${item.tight ? 'px-2 mx-0' : 'px-3 mx-1'}`}
+                className={`text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium uppercase tracking-wider px-3 mx-1`}
               >
                 {item.label}
               </Link>
