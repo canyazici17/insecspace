@@ -166,8 +166,9 @@ export const conferenceData = {
     { id: 3, name: "SPACELİS", tier: "gold" },
     { id: 4, name: "İMarine", tier: "gold" },
     { id: 12, name: "MON-IN", tier: "gold" },
-    { id: 13, name: "RSAT", tier: "gold" },
+    { id: 13, name: "ICT Certify", tier: "gold" },
     { id: 5, name: " ICT MEDIA", tier: "silver" },
+    { id: 21, name: "RSAT", tier: "badgeLanyard" },
     { id: 6, name: "İTÜ-USTTL", tier: "bronze" },
     { id: 7, name: "TÜYAFED", tier: "bronze" },
     { id: 14, name: "TOSYÖV", tier: "bronze" },
@@ -177,7 +178,9 @@ export const conferenceData = {
     { id: 18, name: "TDTV", tier: "bronze" },
     { id: 19, name: "INTERPLANETARY", tier: "bronze" },
     { id: 20, name: "SIGNATURE", tier: "bronze" },
-    { id: 8, name: "Ecuadorian Space Agency", tier: "bronze" }
+    { id: 8, name: "Ecuadorian Space Agency", tier: "bronze" },
+    { id: 22, name: "Senin Kariyerin", tier: "bronze" },
+    { id: 23, name: "TELKODER", tier: "bronze" }
   ]
 };
 

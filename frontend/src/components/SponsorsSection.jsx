@@ -17,14 +17,16 @@ const SponsorsSection = ({ sponsors }) => {
     platinum: 'from-cyan-400 to-blue-400',
     gold: 'from-yellow-400 to-yellow-600',
     silver: 'from-gray-300 to-gray-400',
-    bronze: 'from-orange-400 to-orange-600'
+    bronze: 'from-orange-400 to-orange-600',
+    badgeLanyard: 'from-pink-400 to-pink-600'
   };
 
   const tierSizes = {
     platinum: 'text-4xl',
     gold: 'text-3xl',
     silver: 'text-2xl',
-    bronze: 'text-xl'
+    bronze: 'text-xl',
+    badgeLanyard: 'text-2xl'
   };
 
   const groupedSponsors = sponsors.reduce((acc, sponsor) => {
@@ -88,12 +90,12 @@ const SponsorsSection = ({ sponsors }) => {
 
         {/* Sponsors by Tier */}
         <div className="space-y-12">
-          {Object.entries(groupedSponsors).map(([tier, tierSponsors]) => (
+          {['platinum', 'gold', 'badgeLanyard', 'silver', 'bronze'].filter(tier => groupedSponsors[tier]).map(tier => (
             <div key={tier}>
               {/* Tier Title */}
-              <div className={`text-center${tier === 'silver' ? ' mt-20 mb-8' : ''}${tier === 'gold' ? ' mt-20 mb-8' : ''}${tier === 'bronze' ? ' mt-20 mb-8' : tier !== 'silver' && tier !== 'gold' && tier !== 'bronze' ? ' mb-8' : ''}`}> 
+              <div className={`text-center${tier === 'badgeLanyard' ? ' mt-20 mb-8' : ''}${tier === 'silver' ? ' mt-20 mb-8' : ''}${tier === 'gold' ? ' mt-20 mb-8' : ''}${tier === 'bronze' ? ' mt-20 mb-8' : tier !== 'silver' && tier !== 'gold' && tier !== 'bronze' && tier !== 'badgeLanyard' ? ' mb-8' : ''}`}> 
                 <h3 className={`${tierSizes[tier]} font-bold uppercase tracking-wider bg-gradient-to-r ${tierColors[tier]} bg-clip-text text-transparent`}>
-                  {tier === 'platinum' ? 'Strategic Partner' : tier === 'gold' ? 'BRONZE SPONSORS' : tier === 'silver' ? 'Media Sponsor' : tier === 'bronze' ? 'Supporters' : `${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors`}
+                  {tier === 'platinum' ? 'Strategic Partner' : tier === 'gold' ? 'BRONZE SPONSORS' : tier === 'silver' ? 'Media Sponsor' : tier === 'bronze' ? 'Supporters' : tier === 'badgeLanyard' ? 'BADGE LANYARD SPONSOR' : `${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors`}
                 </h3>
               </div>
 
@@ -104,7 +106,7 @@ const SponsorsSection = ({ sponsors }) => {
                 tier === 'silver' ? 'md:grid-cols-2' :
                 'md:grid-cols-3'
               }`}> 
-                {tierSponsors.map((sponsor, idx) => (
+                {groupedSponsors[tier].map((sponsor, idx) => (
                   <div
                     key={sponsor.id}
                     className="group relative bg-gradient-to-br from-gray-900 to-black border border-cyan-500/30 rounded-2xl p-10 flex flex-col items-center justify-center hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20"
@@ -137,7 +139,7 @@ const SponsorsSection = ({ sponsors }) => {
                           <img src="/MON IN.jpeg" alt="MON IN Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'gold' && idx === 3 ? (
-                          <img src="/RSAT.jpeg" alt="RSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/ICT_Certify.jpeg" alt="ICT Certify Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'silver' && idx === 0 ? (
                           <img src="/Media.jpeg" alt="Media Sponsor Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
@@ -172,6 +174,16 @@ const SponsorsSection = ({ sponsors }) => {
                         {tier === 'bronze' && idx === 9 ? (
                           <img src="/ECUADOR.jpeg" alt="ECUADOR Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
+                         {tier === 'bronze' && idx === 10 ? (
+                          <img src="/Senin_Kariyerin.jpeg" alt="Senin_Kariyerin Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 11 ? (
+                          <img src="/TELKODER.jpeg" alt="TELKODER Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'badgeLanyard' && idx === 0 ? (
+                          <img src="/RSAT.jpeg" alt="RSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                       
                         <div className={`font-bold uppercase tracking-wider text-gray-400 group-hover:bg-gradient-to-r group-hover:${tierColors[tier]} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
                           tier === 'platinum' ? 'text-2xl' :
                           tier === 'gold' ? 'text-xl' :
