@@ -70,8 +70,8 @@ const Programme = () => (
           <span className="pl-28">TÜBİTAK Space</span><br/>
           <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
           <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
-          <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp; “The Strategic Role of Satellite Communications in <br/>
-          <span className="pl-28">Modern Security Architectures”, Mehmet TOROS, CEO at MCT Telco Global</span><br/>
+          <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp; “The Strategic Role of Satellite Communications in Modern <br/>
+          <span className="pl-28">Security Architectures”, Mehmet TOROS, CEO at MCT Telco Global</span><br/>
         </div>
         <div className="mt-2 font-bold text-white text-base md:text-lg"><span className="font-bold text-cyan-300">17:30-17.45</span>&nbsp;&nbsp;WRAP UP SESSION / KAPANIŞ OTURUMU</div>
       </div>
