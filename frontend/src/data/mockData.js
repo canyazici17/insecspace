@@ -124,6 +124,20 @@ export const conferenceData = {
       title: "WP of Satellite Operations at TURKSAT",
       image: "\Konuşmacı11.jpeg",
       bio: 'linkedin11'
+    },
+    {
+      id: 12,
+      name: "Gurvinder CHOHAN",
+      title: "CEO at RSAT Space",
+      image: "/RSAT CEO.jpeg",
+      bio: ""
+    },
+    {
+      id: 13,
+      name: "Veli Yanıkgönül",
+      title: "Satellite Technologies Director at TÜRKSAT",
+      image: "/Konuşmacı17.jpeg",
+      bio: "linkedin13"
     }
   ],
 
