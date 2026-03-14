@@ -138,6 +138,34 @@ export const conferenceData = {
       title: "Scientific Researcher at TUBITAK-Space / Executive Board Member at TÜRKSAT",
       image: "\Konuşmacı9.jpeg",
       bio: 'linkedin9'
+    },
+     {
+      id: 14,
+      name: "Medeni Soysal",
+      title: "Senior Chief Researcher at TÜBİTAK- Space",
+      image: "\Konuşmacı14.jpeg",
+      bio: 'linkedin14'
+    },
+     {
+      id: 15,
+      name: "Dr. Cevher Levent Ertürk",
+      title: "Project Manager at TÜBİTAK Space",
+      image: "\Konuşmacı15.jpeg",
+      bio: ''
+    },
+     {
+      id: 16,
+      name: "Uğur Coşkun",
+      title: "CEO at Ad Astra Technology Group (AATG)",
+      image: "\Konuşmacı16.jpeg",
+      bio: 'linkedin16'
+    },
+     {
+      id: 18,
+      name: "Mehmet Toros",
+      title: "CEO at MCT Telco Global",
+      image: "\Konuşmacı18.jpeg",
+      bio: 'linkedin18'
     }
   ],
 

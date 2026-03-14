@@ -147,6 +147,36 @@ const SpeakersSection = ({ speakers, hideHeader }) => {
                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><rect width="32" height="32" rx="6" fill="#0A66C2"/><path d="M9.429 12.857h3.143v9.714H9.429v-9.714zm1.571-1.571c-1.029 0-1.857-.829-1.857-1.857 0-1.029.829-1.857 1.857-1.857 1.029 0 1.857.829 1.857 1.857 0 1.029-.829 1.857-1.857 1.857zm4.286 1.571h3.014v1.329h.043c.42-.8 1.443-1.643 2.971-1.643 3.177 0 3.771 2.091 3.771 4.808v5.22h-3.143v-4.629c0-1.104-.02-2.523-1.543-2.523-1.543 0-1.779 1.206-1.779 2.449v4.703h-3.143v-9.714z" fill="#fff"/></svg>
                       <span>LinkedIn Profile</span>
                     </a>
+                     ) : speaker.bio === 'linkedin14' ? (
+                    <a
+                      href="https://www.linkedin.com/in/medeni-soysal-25974643?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-cyan-500 hover:text-cyan-700 mt-2"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><rect width="32" height="32" rx="6" fill="#0A66C2"/><path d="M9.429 12.857h3.143v9.714H9.429v-9.714zm1.571-1.571c-1.029 0-1.857-.829-1.857-1.857 0-1.029.829-1.857 1.857-1.857 1.029 0 1.857.829 1.857 1.857 0 1.029-.829 1.857-1.857 1.857zm4.286 1.571h3.014v1.329h.043c.42-.8 1.443-1.643 2.971-1.643 3.177 0 3.771 2.091 3.771 4.808v5.22h-3.143v-4.629c0-1.104-.02-2.523-1.543-2.523-1.543 0-1.779 1.206-1.779 2.449v4.703h-3.143v-9.714z" fill="#fff"/></svg>
+                      <span>LinkedIn Profile</span>
+                    </a>
+                    ) : speaker.bio === 'linkedin16' ? (
+                    <a
+                      href="https://www.linkedin.com/in/ugurcoskunaatg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-cyan-500 hover:text-cyan-700 mt-2"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><rect width="32" height="32" rx="6" fill="#0A66C2"/><path d="M9.429 12.857h3.143v9.714H9.429v-9.714zm1.571-1.571c-1.029 0-1.857-.829-1.857-1.857 0-1.029.829-1.857 1.857-1.857 1.029 0 1.857.829 1.857 1.857 0 1.029-.829 1.857-1.857 1.857zm4.286 1.571h3.014v1.329h.043c.42-.8 1.443-1.643 2.971-1.643 3.177 0 3.771 2.091 3.771 4.808v5.22h-3.143v-4.629c0-1.104-.02-2.523-1.543-2.523-1.543 0-1.779 1.206-1.779 2.449v4.703h-3.143v-9.714z" fill="#fff"/></svg>
+                      <span>LinkedIn Profile</span>
+                    </a>
+                    ) : speaker.bio === 'linkedin18' ? (
+                    <a
+                      href="https://www.linkedin.com/in/mehmet-c-toros?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-cyan-500 hover:text-cyan-700 mt-2"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><rect width="32" height="32" rx="6" fill="#0A66C2"/><path d="M9.429 12.857h3.143v9.714H9.429v-9.714zm1.571-1.571c-1.029 0-1.857-.829-1.857-1.857 0-1.029.829-1.857 1.857-1.857 1.029 0 1.857.829 1.857 1.857 0 1.029-.829 1.857-1.857 1.857zm4.286 1.571h3.014v1.329h.043c.42-.8 1.443-1.643 2.971-1.643 3.177 0 3.771 2.091 3.771 4.808v5.22h-3.143v-4.629c0-1.104-.02-2.523-1.543-2.523-1.543 0-1.779 1.206-1.779 2.449v4.703h-3.143v-9.714z" fill="#fff"/></svg>
+                      <span>LinkedIn Profile</span>
+                    </a>
                   ) : speaker.bio === 'linkedin11' ? (
                     <a
                       href="https://www.linkedin.com/in/dr-selman-d-25627b18?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
