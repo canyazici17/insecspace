@@ -56,6 +56,41 @@ export const conferenceData = {
       bio: 'linkedin'
     },
     {
+      id: 10,
+      name: "Ömer Abdullah Karagözoğlu",
+      title: "President of Turkish Information Technologies and Communication Authority (BTK)",
+      image: "\Konuşmacı10.jpeg",
+      bio: 'linkedin10'
+    },
+    {
+      id: 11,
+      name: "Dr. Selman Demirel",
+      title: "WP of Satellite Operations at TURKSAT",
+      image: "\Konuşmacı11.jpeg",
+      bio: 'linkedin11'
+    },
+    {
+      id: 8,
+      name: "M. Mehmet Nefes",
+      title: "Director / Chairman of the Board at TÜBİTAK-Space",
+      image: "\Konuşmacı8.jpeg",
+      bio: 'linkedin8'
+    },
+    {
+      id: 12,
+      name: "Gurvinder CHOHAN",
+      title: "CEO at RSAT Space",
+      image: "/RSAT CEO.jpeg",
+      bio: ""
+    },
+    {
+      id: 13,
+      name: "Veli Yanıkgönül",
+      title: "Satellite Technologies Director at TÜRKSAT",
+      image: "/Konuşmacı17.jpeg",
+      bio: "linkedin13"
+    },
+    {
       id: 2,
       name: "Prof.Dr.Rüstem Alim Aslan",
       title: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University",
@@ -98,46 +133,11 @@ export const conferenceData = {
       bio: 'linkedin7'
     },
     {
-      id: 8,
-      name: "M. Mehmet Nefes",
-      title: "Director / Chairman of the Board at TÜBİTAK-Space",
-      image: "\Konuşmacı8.jpeg",
-      bio: 'linkedin8'
-    },
-    {
       id: 9,
       name: "Dr. Mustafa Helvacı",
       title: "Scientific Researcher at TUBITAK-Space / Executive Board Member at TÜRKSAT",
       image: "\Konuşmacı9.jpeg",
       bio: 'linkedin9'
-    },
-    {
-      id: 10,
-      name: "Ömer Abdullah Karagözoğlu",
-      title: "President of Turkish Information Technologies and Communication Authority (BTK)",
-      image: "\Konuşmacı10.jpeg",
-      bio: 'linkedin10'
-    },
-    {
-      id: 11,
-      name: "Dr. Selman Demirel",
-      title: "WP of Satellite Operations at TURKSAT",
-      image: "\Konuşmacı11.jpeg",
-      bio: 'linkedin11'
-    },
-    {
-      id: 12,
-      name: "Gurvinder CHOHAN",
-      title: "CEO at RSAT Space",
-      image: "/RSAT CEO.jpeg",
-      bio: ""
-    },
-    {
-      id: 13,
-      name: "Veli Yanıkgönül",
-      title: "Satellite Technologies Director at TÜRKSAT",
-      image: "/Konuşmacı17.jpeg",
-      bio: "linkedin13"
     }
   ],
 
