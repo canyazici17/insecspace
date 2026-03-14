@@ -15,9 +15,9 @@ const MediaCenter = () => (
     <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-8 px-4">
       {[
         { img: "/Comitte1.jpeg", name: "Mehmet Ali Yazıcı", desc: "INSECSPACE Chairman" },
-        { img: "/Comite2.jpeg", name: "Prof.Dr.Rüstem Alim Aslan", desc: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University" },
+        { img: "/Konuşmacı17.jpeg", name: "Veli Yanıkgönül", desc: "Satellite Technologies Director at TÜRKSAT" },
         { img: "/Comite3.jpeg", name: "Ali Baygeldi", desc: "Head of Space Systems and Spacecraft Department at Turkish Space Agency (TUA)" },
-        { img: "/Konuşmacı17.jpeg", name: "Veli Yanıkgönül", desc: "Satellite Technologies Director at TÜRKSAT" }
+        { img: "/Comite2.jpeg", name: "Prof.Dr.Rüstem Alim Aslan", desc: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University" }      
       ].map((member, idx) => (
         <div
           key={idx}

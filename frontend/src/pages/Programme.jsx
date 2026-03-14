@@ -18,14 +18,14 @@ const Programme = () => (
           Ömer Abdullah KARAGÖZOĞLU, President of Turkish Information Technologies and Communication Authority (BTK)<br/>
           Ömer Fatih SAYAN, T.C. Deputy Minister of Transport and Infrastructure
         </div>
-        <div className="mt-2 font-bold text-white text-base md:text-lg"><span className="font-bold text-cyan-300">10:45-12.00</span>&nbsp;&nbsp;SESSION-1: <span className="text-yellow-300">INNOVATIVE & EMERGING SATELLITE TECHNOLOGIES / YENİLİKÇİ VE GELİŞMEKTE OLAN UYDU TEKNOLOJİLERİ</span></div>
+        <div className="mt-2 font-bold text-white text-base md:text-lg"><span className="font-bold text-cyan-300">10:45-12.00</span>&nbsp;&nbsp;SESSION-1: <span className="text-yellow-300">INNOVATIVE & EMERGING SATELLITE TECHNOLOGIES AND THEIR ROLE IN NATIONAL DEFENSE  / YENİLİKÇİ VE GELİŞMEKTE OLAN UYDU TEKNOLOJİLERİ VE ULUSAL SAVUNMADAKİ ROLLERİ</span></div>
         <div className="pl-32 text-sm md:text-base mt-1">
-          MODERATOR: Panel Moderator to be announced soon<br/>
+          MODERATOR: * to be announced soon<br/>
           Panelists:<br/>
           Dr. Selman DEMİREL, VP of Satellite Operations at TURKSAT<br/>
           M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK-Space<br/>
-          ASELSAN * Speaker requested officially & response awaited<br/>
-          Turkish Aerospace-TAI * Speaker requested officially & response awaited<br/>
+          ASELSAN Representative (*Speaker information awaited)<br/>
+          Turkish Aerospace (TAI) Representative (*Speaker information awaited)<br/>
           Gurvinder CHOHAN, CEO at RSAT Space
         </div>
         <div className="mt-2 font-bold text-white text-base md:text-lg"><span className="font-bold text-cyan-300">12:00-13.15</span>&nbsp;&nbsp;SESSION-2: <span className="text-yellow-300">SPACE ECONOMY & SITUATIONAL AWARENESS / UZAY EKONOMİSİ VE DURUM FARKINDALIĞI</span></div>
@@ -48,9 +48,10 @@ const Programme = () => (
         <div className="pl-32 text-sm md:text-base mt-1">
           MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda<br/>
           Panelists:<br/>
-          Panelist-1 to be announced soon<br/>
-          Panelist-2 to be announced soon<br/>
-          Panelist-3 to be announced soon<br/>
+          Uğur COŞKUN, CEO at Ad Astra Technology Group (AATG)<br/>
+          Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the <br/>
+          UN AI Panel<br/> 
+          Cem BİLSEL, Board Member at TUYAD<br/>
           Panelist-4 to be announced soon<br/>
           Panelist-5 to be announced soon
         </div>
@@ -64,12 +65,13 @@ const Programme = () => (
           <span className="font-bold text-cyan-300">15:45-16.00</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
           <span className="font-bold text-cyan-300">16:00-16.15</span>&nbsp;&nbsp; “Topic is awaited”, Kazım EFENDİOĞLU, Executive Coordinator at<br/>
           <span className="pl-28">ULAK Haberleşme</span><br/>
-          <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp; AIRBUS Defence & Space * Speaker requested officially & response awaited<br/>
+          <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp; Invited Speaker | Davetli Konuşmacı* to be announced soon<br/>
           <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Cevher Levent ERTÜRK, Project Manager at<br/>
           <span className="pl-28">TÜBİTAK Space</span><br/>
           <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
           <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
-          <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı* to be announced soon
+          <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp; “The Strategic Role of Satellite Communications in <br/>
+          <span className="pl-28">Modern Security Architectures”, Mehmet TOROS, CEO at MCT Telco Global</span><br/>
         </div>
         <div className="mt-2 font-bold text-white text-base md:text-lg"><span className="font-bold text-cyan-300">17:30-17.45</span>&nbsp;&nbsp;WRAP UP SESSION / KAPANIŞ OTURUMU</div>
       </div>
