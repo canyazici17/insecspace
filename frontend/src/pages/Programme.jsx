@@ -15,8 +15,8 @@ const Programme = () => (
         <div className="pl-32 text-sm md:text-base mt-1">
           Ali YAZICI, INSECSPACE’2026 Conference President<br/>
           Ahmet Hamdi ATALAR, TÜRKSAT General Manager<br/>
-          Ömer Abdullah KARAGÖZOĞLU, President of Turkish Information Technologies and Communication Authority (BTK)<br/>
-          Ömer Fatih SAYAN, T.C. Deputy Minister of Transport and Infrastructure
+          Ömer Abdullah KARAGÖZOĞLU, President of Turkish Information Technologies and Communication Authority (BTK)*<br/>
+          Ömer Fatih SAYAN, T.C. Deputy Minister of Transport and Infrastructure*
         </div>
         <div className="mt-2 font-bold text-white text-base md:text-lg"><span className="font-bold text-cyan-300">10:45-12.00</span>&nbsp;&nbsp;SESSION-1: <span className="text-yellow-300">INNOVATIVE & EMERGING SATELLITE TECHNOLOGIES AND THEIR ROLE IN NATIONAL DEFENSE  / YENİLİKÇİ VE GELİŞMEKTE OLAN UYDU TEKNOLOJİLERİ VE ULUSAL SAVUNMADAKİ ROLLERİ</span></div>
         <div className="pl-32 text-sm md:text-base mt-1">
