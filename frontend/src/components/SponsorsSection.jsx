@@ -22,10 +22,10 @@ const SponsorsSection = ({ sponsors }) => {
   };
 
   const tierSizes = {
-    platinum: 'text-4xl',
-    gold: 'text-3xl',
+    platinum: 'text-3xl',
+    gold: 'text-2xl',
     silver: 'text-2xl',
-    bronze: 'text-xl',
+    bronze: 'text-2xl',
     badgeLanyard: 'text-2xl'
   };
 
@@ -185,7 +185,7 @@ const SponsorsSection = ({ sponsors }) => {
                         ) : null}
                        
                         <div className={`font-bold uppercase tracking-wider text-gray-400 group-hover:bg-gradient-to-r group-hover:${tierColors[tier]} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
-                          tier === 'platinum' ? 'text-2xl' :
+                          tier === 'platinum' ? 'text-xl' :
                           tier === 'gold' ? 'text-xl' :
                           tier === 'silver' ? 'text-lg' :
                           'text-base'
