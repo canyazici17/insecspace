@@ -62,13 +62,13 @@ const Programme = () => (
         </div>
         <div className="pl-6 text-sm md:text-base mt-1">  
           <span className="font-bold text-cyan-300">15:30-15.45</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO @iMARINE<br/>
-          <span className="font-bold text-cyan-300">15:45-16.00</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
+          <span className="font-bold text-cyan-300">15:45-16.00</span>&nbsp;&nbsp; NATO Representative (*Speaker information awaited)<br/>
           <span className="font-bold text-cyan-300">16:00-16.15</span>&nbsp;&nbsp; “Topic is awaited”, Kazım EFENDİOĞLU, Executive Coordinator at<br/>
           <span className="pl-28">ULAK Haberleşme</span><br/>
-          <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp; Invited Speaker | Davetli Konuşmacı* to be announced soon<br/>
-          <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Cevher Levent ERTÜRK, Project Manager at<br/>
+          <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp; “Topic is awaited”, Dr. Cevher Levent ERTÜRK, Project Manager at<br/>
+          <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
           <span className="pl-28">TÜBİTAK Space</span><br/>
-          <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
+          <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
           <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
           <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp; “The Strategic Role of Satellite Communications in Modern <br/>
           <span className="pl-28">Security Architectures”, Mehmet TOROS, CEO at MCT Telco Global</span><br/>
