@@ -50,7 +50,7 @@ const Programme = () => (
               MODERATOR: Medeni SOYSAL, Senior Chief Researcher at TÜBİTAK- Space
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">
-              <span className="font-bold text-cyan-300">12:00-12.15</span>&nbsp;&nbsp;“Topic is awaited”, Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University<br/>
+              <span className="font-bold text-cyan-300">12:00-12.15</span>&nbsp;&nbsp;“Space Debris Risk and Mitigation Methods”, Uğur COŞKUN, CEO at Ad Astra Technology Group (AATG)<br/>
               <span className="font-bold text-cyan-300">12:15-12.30</span>&nbsp;&nbsp;“Topic is awaited”, Ali BAYGELDİ, Head of Space Systems and Spacecraft Department at Turkish Space Agency (TUA)<br/>
               <span className="font-bold text-cyan-300">12:30-12.45</span>&nbsp;&nbsp;“Resilient Solar Energy for Defence & Space”, Dr. Güler KOÇAK, CEO at SPACELIS<br/>
               <span className="font-bold text-cyan-300">12:45-13.00</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Mustafa HELVACI, Scientific Researcher at TUBITAK-Space / Executive Board Member at TÜRKSAT<br/>
@@ -67,7 +67,7 @@ const Programme = () => (
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
               MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda<br/>
               Panelists:<br/>
-              Uğur COŞKUN, CEO at Ad Astra Technology Group (AATG)<br/>
+              Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University<br/>
               Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the <br/>
               UN AI Panel<br/> 
               Cem BİLSEL, Board Member at TUYAD<br/>
