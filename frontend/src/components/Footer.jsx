@@ -72,7 +72,7 @@ const Footer = () => {
               INSECSPACE'26
             </h4>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Leading the conversation on innovations and security in space exploration. Join us for an unforgettable experience.
+              Leading the conversation on innovations and security in space. Join us for an unforgettable experience.
             </p>
           </div>
 
