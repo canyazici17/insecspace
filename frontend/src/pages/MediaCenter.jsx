@@ -25,10 +25,10 @@ const MediaCenter = () => (
         >
           <div className="w-64 h-80 bg-gray-700 flex items-center justify-center mb-6 overflow-hidden rounded-xl border-2 border-cyan-400/30 group-hover:border-cyan-400/70 transition-all duration-300">
             <img
-              src={member.img}
-              alt={member.name}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              style={{ objectPosition: 'center top' }}
+                src={member.img}
+                alt={member.name}
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-300"
+                style={{ objectPosition: 'center top' }}
             />
           </div>
           <div className="w-full text-center mt-4">
