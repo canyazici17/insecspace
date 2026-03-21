@@ -56,9 +56,14 @@ const Navigation = () => {
             <Link
               to="/"
               onClick={handleNavClick}
-                className="text-xl font-bold bg-gradient-to-r from-white via-cyan-400 to-blue-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+              className="flex items-center h-12"
             >
-              INSECSPACE'26
+              <img
+                src={"/Blue Modern Artificial Intelligence Technology Logo (4).png"}
+                alt="INSECSPACE Logo"
+                className="h-44 w-auto object-contain"
+                style={{ maxWidth: '160px' }}
+              />
             </Link>
           </div>
 
