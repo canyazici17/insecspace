@@ -28,7 +28,7 @@ const SpeakersSection = ({ speakers, hideHeader }) => {
               className="group relative"
             >
               {/* Card */}
-              <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-gray-900 to-black border border-cyan-500/30 hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
+              <div className="w-64 h-full relative overflow-hidden rounded-lg bg-gradient-to-br from-gray-900 to-black border border-cyan-500/30 hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
                 {/* Image Container */}
                 <div className="relative aspect-square overflow-hidden">
                   <img
