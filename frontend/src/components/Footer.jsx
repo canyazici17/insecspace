@@ -69,7 +69,12 @@ const Footer = () => {
           {/* About */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left md:ml-8">
             <h4 className="text-2xl font-bold bg-gradient-to-r from-white to-cyan-400 bg-clip-text text-transparent mb-4">
-              INSECSPACE'26
+               <img
+                src={"/Blue Modern Artificial Intelligence Technology Logo_New.png"}
+                alt="INSECSPACE Logo"
+                className="h-12 w-auto object-contain"
+                style={{ maxWidth: '160px' }}
+              />
             </h4>
             <p className="text-gray-400 leading-relaxed mb-4">
               Leading the conversation on innovations and security in space. Join us for an unforgettable experience.
