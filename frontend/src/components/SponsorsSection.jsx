@@ -141,6 +141,9 @@ const SponsorsSection = ({ sponsors }) => {
                         {tier === 'gold' && idx === 3 ? (
                           <img src="/ICT_Certify.jpeg" alt="ICT Certify Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
+                         {tier === 'gold' && idx === 4 ? (
+                          <img src="/MCT.jpeg" alt="MCT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
                         {tier === 'silver' && idx === 0 ? (
                           <img src="/Media.jpeg" alt="Media Sponsor Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
@@ -157,7 +160,7 @@ const SponsorsSection = ({ sponsors }) => {
                           <img src="/KARNYUZ.jpeg" alt="KARNYUZ Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'bronze' && idx === 4 ? (
-                          <img src="/MCT.jpeg" alt="MCT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/BilişimProfesyonelleri.jpeg" alt="Bilişim Profesyonelleri Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'bronze' && idx === 5 ? (
                           <img src="/İKP.jpeg" alt="İKP Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
@@ -179,6 +182,15 @@ const SponsorsSection = ({ sponsors }) => {
                         ) : null}
                         {tier === 'bronze' && idx === 11 ? (
                           <img src="/TELKODER.jpeg" alt="TELKODER Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 12 ? (
+                          <img src="/dg.jpeg" alt="Digital Gündem Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                         {tier === 'bronze' && idx === 13 ? (
+                          <img src="/İstanbulOdası.jpeg" alt="İstanbul Odası Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'bronze' && idx === 14 ? (
+                          <img src="/SinerjiTürk.jpeg" alt="SinerjiTürk Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'badgeLanyard' && idx === 0 ? (
                           <img src="/RSAT.jpeg" alt="RSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
