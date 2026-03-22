@@ -225,7 +225,7 @@ export const conferenceData = {
     { id: 22, name: "Senin Kariyerin", tier: "bronze" },
     { id: 23, name: "TELKODER", tier: "bronze" },
     { id: 24, name: "Digital Gündem", tier: "bronze" },
-    { id: 25, name: "İst.Rad.P.T.TV T.Odası  Odası", tier: "bronze" },
+    { id: 25, name: "İst.Rad.P.T.TV T.Odası", tier: "bronze" },
     { id: 26, name: "SinerjiTürk", tier: "bronze" }
   ]
 };
