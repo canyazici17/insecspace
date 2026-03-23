@@ -24,10 +24,10 @@ const Programme = () => (
             <span className="font-bold text-cyan-300 text-lg">09:45-10:45</span>
             <span className="mt-2 text-white">OPENING SPEECHES</span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
-              Ali YAZICI, INSECSPACE’2026 Conference President<br/>
-              Ahmet Hamdi ATALAR, TÜRKSAT General Manager<br/>
-              Ömer Abdullah KARAGÖZOĞLU, President of Turkish Information Technologies and Communication Authority (BTK)*<br/>
-              Ömer Fatih SAYAN, T.C. Deputy Minister of Transport and Infrastructure*
+              <span className="block mb-1">Ali YAZICI, INSECSPACE’2026 Conference President</span>
+              <span className="block mb-1">Ahmet Hamdi ATALAR, TÜRKSAT General Manager</span>
+              <span className="block mb-1">Ömer Abdullah KARAGÖZOĞLU, President of Turkish Information Technologies and Communication Authority (BTK)*</span>
+              <span className="block mb-1">Ömer Fatih SAYAN, T.C. Deputy Minister of Transport and Infrastructure*</span>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
@@ -36,11 +36,11 @@ const Programme = () => (
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
               MODERATOR: * to be announced soon<br/>
               Panelists:<br/>
-              Dr. Selman DEMİREL, VP of Satellite Operations at TURKSAT<br/>
-              M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK-Space<br/>
-              ASELSAN Representative (*Speaker information awaited)<br/>
-              Turkish Aerospace (TAI) Representative (*Speaker information awaited)<br/>
-              Gurvinder CHOHAN, CEO at RSAT Space
+              <span className="text-white block mb-1">Dr. Selman DEMİREL, VP of Satellite Operations at TURKSAT</span>
+              <span className="text-white block mb-1">M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK-Space</span>
+              <span className="text-white block mb-1">ASELSAN Representative (*Speaker information awaited)</span>
+              <span className="text-white block mb-1">Turkish Aerospace (TAI) Representative (*Speaker information awaited)</span>
+              <span className="text-white block mb-1">Gurvinder CHOHAN, CEO at RSAT Space</span>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
@@ -65,14 +65,13 @@ const Programme = () => (
             <span className="font-bold text-cyan-300 text-lg">14:00-15:15</span>
             <span className="mt-2 text-white">SESSION-3: <span className="text-yellow-300">RESILIENT & SECURE SATELLITE COMMUNICATION TECHNOLOGIES / DAYANIKLI VE GÜVENLİ UYDU İLETİŞİM TEKNOLOJİLERİ</span></span>
             <div className="mt-2 text-xs md:text-sm text-white-200">
-              MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda<br/>
-              Panelists:<br/>
-              Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University<br/>
-              Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the <br/>
-              UN AI Panel<br/> 
-              Cem BİLSEL, Board Member at TUYAD<br/>
-              Panelist-4 to be announced soon<br/>
-              Panelist-5 to be announced soon
+              <span className="block mb-1 text-cyan-300">MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda</span>
+              <span className="block mb-1 text-cyan-300">Panelists:</span>
+              <span className="block mb-1">Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University</span>
+              <span className="block mb-1">Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the UN AI Panel</span>
+              <span className="block mb-1">Cem BİLSEL, Board Member at TUYAD</span>
+              <span className="block mb-1">Panelist-4 to be announced soon</span>
+              <span className="block mb-1">Panelist-5 to be announced soon</span>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-32 min-h-0">
