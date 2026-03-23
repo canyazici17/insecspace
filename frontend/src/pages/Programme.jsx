@@ -64,7 +64,7 @@ const Programme = () => (
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
             <span className="font-bold text-cyan-300 text-lg">14:00-15:15</span>
             <span className="mt-2 text-white">SESSION-3: <span className="text-yellow-300">RESILIENT & SECURE SATELLITE COMMUNICATION TECHNOLOGIES / DAYANIKLI VE GÜVENLİ UYDU İLETİŞİM TEKNOLOJİLERİ</span></span>
-            <div className="mt-2 text-xs md:text-sm text-cyan-200">
+            <div className="mt-2 text-xs md:text-sm text-white-200">
               MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda<br/>
               Panelists:<br/>
               Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University<br/>
