@@ -65,8 +65,8 @@ const Programme = () => (
             <span className="font-bold text-cyan-300 text-lg">14:00-15:15</span>
             <span className="mt-2 text-white">SESSION-3: <span className="text-yellow-300">RESILIENT & SECURE SATELLITE COMMUNICATION TECHNOLOGIES / DAYANIKLI VE GÜVENLİ UYDU İLETİŞİM TEKNOLOJİLERİ</span></span>
             <div className="mt-2 text-xs md:text-sm text-white-200">
-              <span className="block mb-1 text-cyan-300">MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda</span>
-              <span className="block mb-1 text-cyan-300">Panelists:</span>
+              <span className="block mb-1 text-cyan-200">MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda</span>
+              <span className="block mb-1 text-cyan-200">Panelists:</span>
               <span className="block mb-1">Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University</span>
               <span className="block mb-1">Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the UN AI Panel</span>
               <span className="block mb-1">Cem BİLSEL, Board Member at TUYAD</span>
