@@ -144,6 +144,9 @@ const SponsorsSection = ({ sponsors }) => {
                          {tier === 'gold' && idx === 4 ? (
                           <img src="/MCT.jpeg" alt="MCT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
+                        {tier === 'gold' && idx === 5 ? (
+                          <img src="/AktifNeser.jpeg" alt="Aktif Neser Elektronik Ltd. Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
                         {tier === 'silver' && idx === 0 ? (
                           <img src="/Media.jpeg" alt="Media Sponsor Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
