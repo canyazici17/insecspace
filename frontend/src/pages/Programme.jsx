@@ -34,11 +34,10 @@ const Programme = () => (
             <span className="font-bold text-cyan-300 text-lg">10:45-12.00</span>
             <span className="mt-2 text-white">SESSION-1: <span className="text-yellow-300">INNOVATIVE & EMERGING SATELLITE TECHNOLOGIES AND THEIR ROLE IN NATIONAL DEFENSE  / YENİLİKÇİ VE GELİŞMEKTE OLAN UYDU TEKNOLOJİLERİ VE ULUSAL SAVUNMADAKİ ROLLERİ</span></span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
-              MODERATOR: * to be announced soon<br/>
+              MODERATOR: Assoc. Prof. Dr. Şeyda ERTEKİN, Vice Head of METU BILTER Center | METU Computer Engineering Faculty Member<br/>
               Panelists:<br/>
               <span className="text-white block mb-1">Dr. Selman DEMİREL, VP of Satellite Operations at TURKSAT</span>
               <span className="text-white block mb-1">M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK-Space</span>
-              <span className="text-white block mb-1">ASELSAN Representative (*Speaker information awaited)</span>
               <span className="text-white block mb-1">Turkish Aerospace (TAI) Representative (*Speaker information awaited)</span>
               <span className="text-white block mb-1">Gurvinder CHOHAN, CEO at RSAT Space</span>
             </div>
@@ -71,7 +70,6 @@ const Programme = () => (
               <span className="block mb-1">Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the UN AI Panel</span>
               <span className="block mb-1">Cem BİLSEL, Board Member at TUYAD</span>
               <span className="block mb-1">Panelist-4 to be announced soon</span>
-              <span className="block mb-1">Panelist-5 to be announced soon</span>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-32 min-h-0">

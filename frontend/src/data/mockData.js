@@ -112,6 +112,13 @@ export const conferenceData = {
       bio: 'linkedin4'
     },
     {
+      id: 19,
+      name: "Assoc. Prof. Dr. Şeyda Ertekin",
+      title: "Vice Head of METU BILTER Center | METU Computer Engineering Faculty Member",
+      image: "\Konuşmacı19.jpeg",
+      bio: 'linkedin19'
+    },
+    {
       id: 5,
       name: "Dr. Güler Koçak",
       title: "CEO AT SPACELIS",
