@@ -72,7 +72,7 @@ export const conferenceData = {
     {
       id: 8,
       name: "M. Mehmet Nefes",
-      title: "Director / Chairman of the Board at TÜBİTAK-Space",
+      title: "Director / Chairman of the Board at TÜBİTAK-UZAY",
       image: "\Konuşmacı8.jpeg",
       bio: 'linkedin8'
     },
@@ -99,10 +99,10 @@ export const conferenceData = {
     },
     {
       id: 3,
-      name: "Ali Baygeldi",
-      title: "Head of Space Systems and Spacecraft Department at Turkish Space Agency (TUA)",
-      image: "\Comite3.jpeg",
-      bio: 'linkedin3'
+      name: "Fatih Dulkan",
+      title: "VP at Turkish Space Agency (TUA)",
+      image: "\Konuşmacı20.jpeg",
+      bio: ''
     },
     {
       id: 4,
@@ -149,14 +149,14 @@ export const conferenceData = {
      {
       id: 14,
       name: "Medeni Soysal",
-      title: "Senior Chief Researcher at TÜBİTAK- Space",
+      title: "Senior Chief Researcher at TÜBİTAK-UZAY",
       image: "\Konuşmacı14.jpeg",
       bio: 'linkedin14'
     },
      {
       id: 15,
       name: "Dr. Cevher Levent Ertürk",
-      title: "Project Manager at TÜBİTAK Space",
+      title: "Project Manager at TÜBİTAK-UZAY",
       image: "\Konuşmacı15.jpeg",
       bio: ''
     },
@@ -173,6 +173,20 @@ export const conferenceData = {
       title: "CEO at MCT Telco Global",
       image: "\Konuşmacı18.jpeg",
       bio: 'linkedin18'
+    },
+    {
+      id: 21,
+      name: "Prof. Dr. Lokman KUZU",
+      title: "Karabük Üniversity Electrical and Electronics Engineering Faculty Member| Chairman of the Board GSATCOM",
+      image: "\Konuşmacı21.jpeg",
+      bio: 'linkedin21'
+    },
+    {
+      id: 22,
+      name: "Anıl Yağız",
+      title: "Founder & CEO at Singularity",
+      image: "\Konuşmacı22.jpeg",
+      bio: 'linkedin22'
     }
   ],
 
@@ -234,7 +248,8 @@ export const conferenceData = {
     { id: 23, name: "TELKODER", tier: "bronze" },
     { id: 24, name: "Digital Gündem", tier: "bronze" },
     { id: 25, name: "İst.Rad.P.T.TV T.Odası", tier: "bronze" },
-    { id: 26, name: "SinerjiTürk", tier: "bronze" }
+    { id: 26, name: "SinerjiTürk", tier: "bronze" },
+    { id: 27, name: "AIPA", tier: "bronze" }
   ]
 };
 

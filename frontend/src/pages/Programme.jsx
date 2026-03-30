@@ -37,7 +37,7 @@ const Programme = () => (
               MODERATOR: Assoc. Prof. Dr. Şeyda ERTEKİN, Vice Head of METU BILTER Center | METU Computer Engineering Faculty Member<br/>
               Panelists:<br/>
               <span className="text-white block mb-1">Dr. Selman DEMİREL, VP of Satellite Operations at TURKSAT</span>
-              <span className="text-white block mb-1">M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK-Space</span>
+              <span className="text-white block mb-1">M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK-UZAY</span>
               <span className="text-white block mb-1">Turkish Aerospace (TAI) Representative (*Speaker information awaited)</span>
               <span className="text-white block mb-1">Gurvinder CHOHAN, CEO at RSAT Space</span>
             </div>
@@ -46,13 +46,13 @@ const Programme = () => (
             <span className="font-bold text-cyan-300 text-lg">12:00-13.15</span>
             <span className="mt-2 text-white">SESSION-2: <span className="text-yellow-300">SPACE ECONOMY & SITUATIONAL AWARENESS / UZAY EKONOMİSİ VE DURUM FARKINDALIĞI</span></span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
-              MODERATOR: Medeni SOYSAL, Senior Chief Researcher at TÜBİTAK- Space
+              MODERATOR: Medeni SOYSAL, Senior Chief Researcher at TÜBİTAK-UZAY
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">
               <span className="font-bold text-cyan-300">12:00-12.15</span>&nbsp;&nbsp;“Space Debris Risk and Mitigation Methods”, Uğur COŞKUN, CEO at Ad Astra Technology Group (AATG)<br/>
-              <span className="font-bold text-cyan-300">12:15-12.30</span>&nbsp;&nbsp;“Topic is awaited”, Ali BAYGELDİ, Head of Space Systems and Spacecraft Department at Turkish Space Agency (TUA)<br/>
+              <span className="font-bold text-cyan-300">12:15-12.30</span>&nbsp;&nbsp;“Space Awareness Activities of TUA”, Fatih DULKAN, VP at Turkish Space Agency (TUA)<br/>
               <span className="font-bold text-cyan-300">12:30-12.45</span>&nbsp;&nbsp;“Resilient Solar Energy for Defence & Space”, Dr. Güler KOÇAK, CEO at SPACELIS<br/>
-              <span className="font-bold text-cyan-300">12:45-13.00</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Mustafa HELVACI, Scientific Researcher at TUBITAK-Space / Executive Board Member at TÜRKSAT<br/>
+              <span className="font-bold text-cyan-300">12:45-13.00</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Mustafa HELVACI, Scientific Researcher at TUBITAK-UZAY / Executive Board Member at TÜRKSAT<br/>
               <span className="font-bold text-cyan-300">13:00-13.15</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı * to be announced soon
             </div>
           </div>
@@ -67,9 +67,10 @@ const Programme = () => (
               <span className="block mb-1 text-cyan-200">MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda</span>
               <span className="block mb-1 text-cyan-200">Panelists:</span>
               <span className="block mb-1">Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University</span>
+              <span className="block mb-1">"TÜRKSAT Representative *Speaker information awaited" </span>
               <span className="block mb-1">Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the UN AI Panel</span>
               <span className="block mb-1">Cem BİLSEL, Board Member at TUYAD</span>
-              <span className="block mb-1">Panelist-4 to be announced soon</span>
+              <span className="block mb-1">Prof. Dr. Lokman KUZU, Karabük Üniversity Electrical and Electronics Engineering Faculty Member| Chairman of the Board GSATCOM</span>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-32 min-h-0">
@@ -77,19 +78,17 @@ const Programme = () => (
             <span className="mt-2 text-white">COFFEE BREAK</span>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
-            <span className="font-bold text-cyan-300 text-lg">15:30-17.30</span>
+            <span className="font-bold text-cyan-300 text-lg">16:00-17:30</span>
             <span className="mt-2 text-white">SESSION-4: <span className="text-yellow-300">FUTURE SATELLITES TECHNOLOGIES / GELECEK UYDU TEKNOLOJİLERİ</span></span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
-              MODERATOR: Panel Moderator to be announced soon<br/>
+              MODERATOR: Veli YANIKGÖNÜL, Satellite Technologies Director at TÜRKSAT<br/>
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">  
-              <span className="font-bold text-cyan-300">15:30-15.45</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO @iMARINE<br/>
-              <span className="font-bold text-cyan-300">15:45-16.00</span>&nbsp;&nbsp;NATO Representative (*Speaker information awaited)<br/>
-              <span className="font-bold text-cyan-300">16:00-16.15</span>&nbsp;&nbsp;“Topic is awaited”, Kazım EFENDİOĞLU, Executive Coordinator at ULAK Haberleşme<br/>
-              <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Cevher Levent ERTÜRK, Project Manager at TÜBİTAK Space<br/>
-              <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
-              <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
-              <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp;Invited Speaker / Davetli Konuşmacı* to be announced soon<br/>
+              <span className="font-bold text-cyan-300">16:00-16:15</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO @iMARINE<br/>
+              <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Cevher Levent ERTÜRK, Project Manager at TÜBİTAK-UZAY<br/>
+              <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;Turkish Air Force Representative *Speaker information awaited<br/>
+              <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;“Topic is awaited”, Kazım EFENDİOĞLU, Executive Coordinator at ULAK Haberleşme<br/>
+              <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp;“Space Security in the Age of AI: Protecting Satellites, Ground Systems, and Mission Integrity”, Anıl YAĞIZ, Founder & CEO at Singularity<br/>
               <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp;“The Strategic Role of Satellite Communications in Modern Security Architectures”, Mehmet TOROS, CEO at MCT Telco Global <br/>
             </div>
           </div>

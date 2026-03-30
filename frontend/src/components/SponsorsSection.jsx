@@ -195,6 +195,9 @@ const SponsorsSection = ({ sponsors }) => {
                         {tier === 'bronze' && idx === 14 ? (
                           <img src="/SinerjiTürk.jpeg" alt="SinerjiTürk Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
+                         {tier === 'bronze' && idx === 15 ? (
+                          <img src="/AIPA.jpeg" alt="AIPA Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
                         {tier === 'badgeLanyard' && idx === 0 ? (
                           <img src="/RSAT.jpeg" alt="RSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
