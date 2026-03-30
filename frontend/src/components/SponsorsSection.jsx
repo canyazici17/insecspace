@@ -151,7 +151,7 @@ const SponsorsSection = ({ sponsors }) => {
                           <img src="/Media.jpeg" alt="Media Sponsor Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'bronze' && idx === 0 ? (
-                          <img src="/USTIL.jpeg" alt="USTIL Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/AIPA.jpeg" alt="AIPA Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'bronze' && idx === 1 ? (
                           <img src="/TÜYAFED.jpeg" alt="TÜYAFED Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
@@ -162,11 +162,11 @@ const SponsorsSection = ({ sponsors }) => {
                         {tier === 'bronze' && idx === 3 ? (
                           <img src="/KARNYUZ.jpeg" alt="KARNYUZ Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
-                        {tier === 'bronze' && idx === 4 ? (
+                       {tier === 'bronze' && idx === 4 ? (
                           <img src="/BilişimProfesyonelleri.jpeg" alt="Bilişim Profesyonelleri Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'bronze' && idx === 5 ? (
-                          <img src="/İKP.jpeg" alt="İKP Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/USTIL.jpeg" alt="USTIL Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'bronze' && idx === 6 ? (
                           <img src="/TDTV.jpeg" alt="TDTV Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
@@ -196,7 +196,7 @@ const SponsorsSection = ({ sponsors }) => {
                           <img src="/SinerjiTürk.jpeg" alt="SinerjiTürk Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                          {tier === 'bronze' && idx === 15 ? (
-                          <img src="/AIPA.jpeg" alt="AIPA Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/İKP.jpeg" alt="İKP Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'badgeLanyard' && idx === 0 ? (
                           <img src="/RSAT.jpeg" alt="RSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />

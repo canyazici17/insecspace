@@ -79,7 +79,7 @@ const Programme = () => (
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-44 min-h-0">
             <span className="font-bold text-cyan-300 text-lg">15:30-16:00</span>
-            <span className="block mb-1 text-yellow-300">"Keynote Speech “Space Domain Awareness” </span>
+            <span className="block mb-1 text-yellow-300">Keynote Speech: “Space Domain Awareness” </span>
             <span className="mt-2 text-xs md:text-sm text-cyan-200">Gurvinder CHOHAN, CEO at RSAT Space</span>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">

@@ -234,12 +234,12 @@ export const conferenceData = {
     { id: 27, name: "Aktif Neser Elektronik Ltd.", tier: "gold" },
     { id: 5, name: " ICT MEDIA", tier: "silver" },
     { id: 21, name: "RSAT", tier: "badgeLanyard" },
-    { id: 6, name: "İTÜ-USTTL", tier: "bronze" },
+    { id: 27, name: "AIPA", tier: "bronze" },
     { id: 7, name: "TÜYAFED", tier: "bronze" },
     { id: 14, name: "TOSYÖV", tier: "bronze" },
     { id: 15, name: "KAMUYZ", tier: "bronze" },
     { id: 24, name: "Bilişim Profesyonelleri", tier: "bronze" },
-    { id: 17, name: "İhracat Kapısı Platformu", tier: "bronze" },
+    { id: 6, name: "İTÜ-USTTL", tier: "bronze" },
     { id: 18, name: "TDTV", tier: "bronze" },
     { id: 19, name: "INTERPLANETARY", tier: "bronze" },
     { id: 20, name: "SIGNATURE", tier: "bronze" },
@@ -249,7 +249,7 @@ export const conferenceData = {
     { id: 24, name: "Digital Gündem", tier: "bronze" },
     { id: 25, name: "İst.Rad.P.T.TV T.Odası", tier: "bronze" },
     { id: 26, name: "SinerjiTürk", tier: "bronze" },
-    { id: 27, name: "AIPA", tier: "bronze" }
+    { id: 17, name: "İhracat Kapısı Platformu", tier: "bronze" },
   ]
 };
 
