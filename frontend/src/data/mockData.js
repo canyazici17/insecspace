@@ -49,6 +49,13 @@ export const conferenceData = {
 
   speakers: [
     {
+      id: 24,
+      name: "Zekeriya ÇOŞTU",
+      title: "T.C. Deputy Minister of Industry and Technology",
+      image: "\ZEKERİYA-ÇOŞTU.jpeg",
+      bio: 'linkedin24'
+    },
+    {
       id: 1,
       name: "Mehmet Ali Yazıcı",
       title: "INSECSPACE Chairman",
@@ -187,6 +194,13 @@ export const conferenceData = {
       title: "Founder & CEO at Singularity",
       image: "\Konuşmacı22.jpeg",
       bio: 'linkedin22'
+    },
+    {
+      id: 23,
+      name: "Yusuf KIRAÇ",
+      title: "President of Turkish Space Agency (TUA)",
+      image: "\Konuşmacı23.jpeg",
+      bio: 'linkedin23'
     }
   ],
 
