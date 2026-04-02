@@ -55,6 +55,13 @@ export const conferenceData = {
       image: "\ZEKERİYA-ÇOŞTU.jpeg",
       bio: 'linkedin24'
     },
+     {
+      id: 23,
+      name: "Yusuf KIRAÇ",
+      title: "President of Turkish Space Agency (TUA)",
+      image: "\Konuşmacı23.jpeg",
+      bio: 'linkedin23'
+    },
     {
       id: 1,
       name: "Mehmet Ali Yazıcı",
@@ -194,13 +201,6 @@ export const conferenceData = {
       title: "Founder & CEO at Singularity",
       image: "\Konuşmacı22.jpeg",
       bio: 'linkedin22'
-    },
-    {
-      id: 23,
-      name: "Yusuf KIRAÇ",
-      title: "President of Turkish Space Agency (TUA)",
-      image: "\Konuşmacı23.jpeg",
-      bio: 'linkedin23'
     }
   ],
 
