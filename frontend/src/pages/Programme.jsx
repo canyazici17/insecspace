@@ -17,11 +17,11 @@ const Programme = () => (
             <span className="mt-2 text-white">REGISTRATION / COFFEE BREAK</span>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
-            <span className="font-bold text-cyan-300 text-lg">09:30-09:40</span>
+            <span className="font-bold text-cyan-300 text-lg">09:30-09:35</span>
             <span className="mt-2 text-white">MOMENT OF SILENCE and THE NATIONAL ANTHEM</span>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
-            <span className="font-bold text-cyan-300 text-lg">09:45-10:45</span>
+            <span className="font-bold text-cyan-300 text-lg">09:35-10:45</span>
             <span className="mt-2 text-white">OPENING SPEECHES</span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
               <span className="block mb-1">Ali YAZICI, INSECSPACE’2026 Conference President</span>
