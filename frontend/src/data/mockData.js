@@ -86,7 +86,7 @@ export const conferenceData = {
     {
       id: 8,
       name: "M. Mehmet Nefes",
-      title: "Director / Chairman of the Board at TÜBİTAK-UZAY",
+      title: "Director / Chairman of the Board at TÜBİTAK UZAY",
       image: "\Konuşmacı8.jpeg",
       bio: 'linkedin8'
     },
@@ -156,21 +156,21 @@ export const conferenceData = {
     {
       id: 9,
       name: "Dr. Mustafa Helvacı",
-      title: "Scientific Researcher at TUBITAK-Space / Executive Board Member at TÜRKSAT",
+      title: "Scientific Researcher at TUBITAK UZAY / Executive Board Member at TÜRKSAT",
       image: "\Konuşmacı9.jpeg",
       bio: 'linkedin9'
     },
      {
       id: 14,
       name: "Dr. Medeni Soysal",
-      title: "Senior Chief Researcher at TÜBİTAK-UZAY",
+      title: "Senior Chief Researcher at TÜBİTAK UZAY",
       image: "\Konuşmacı14.jpeg",
       bio: 'linkedin14'
     },
      {
       id: 15,
       name: "Dr. Cevher Levent Ertürk",
-      title: "Project Manager at TÜBİTAK-UZAY",
+      title: "Project Manager at TÜBİTAK UZAY",
       image: "\Konuşmacı15.jpeg",
       bio: ''
     },
@@ -245,7 +245,7 @@ export const conferenceData = {
     { id: 1, name: "Türkiye Uzay Ajansı (TUA)", tier: "platinum" },
     { id: 2, name: "Bilgi Teknolojileri ve İletişim Kurumu (BTK)", tier: "platinum" },
     { id: 9, name: "TÜRKSAT", tier: "platinum" },
-    { id: 10, name: "TÜBİTAK-UZAY", tier: "platinum" },
+    { id: 10, name: "TÜBİTAK UZAY", tier: "platinum" },
     { id: 11, name: "TUYAD", tier: "platinum" },
     { id: 3, name: "SPACELİS", tier: "gold" },
     { id: 4, name: "İMarine", tier: "gold" },
