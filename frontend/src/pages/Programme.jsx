@@ -25,7 +25,7 @@ const Programme = () => (
             <span className="mt-2 text-white">OPENING SPEECHES</span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
               <span className="block mb-1">Ali YAZICI, INSECSPACE’2026 Conference President</span>
-              <span className="block mb-1">Ahmet Hamdi ATALAR, TÜRKSAT General Manager</span>
+              <span className="block mb-1">Ahmet Hamdi ATALAY, TÜRKSAT General Manager</span>
               <span className="block mb-1">Ömer Abdullah KARAGÖZOĞLU, President of Turkish Information Technologies and Communication Authority (BTK)*</span>
               <span className="block mb-1">Yusuf KIRAÇ, President of Turkish Space Agency (TUA)</span>
               <span className="block mb-1">Zekeriya ÇOŞTU, T.C. Deputy Minister of Industry and Technology </span>
@@ -48,13 +48,13 @@ const Programme = () => (
             <span className="font-bold text-cyan-300 text-lg">12:00-13.15</span>
             <span className="mt-2 text-white">SESSION-2: <span className="text-yellow-300">SPACE ECONOMY & SITUATIONAL AWARENESS / UZAY EKONOMİSİ VE DURUM FARKINDALIĞI</span></span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
-              MODERATOR: Medeni SOYSAL, Senior Chief Researcher at TÜBİTAK-UZAY
+              MODERATOR: Dr. Medeni SOYSAL, Senior Chief Researcher at TÜBİTAK-UZAY
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">
               <span className="font-bold text-cyan-300">12:00-12.15</span>&nbsp;&nbsp;“Space Debris Risk and Mitigation Methods”, Uğur COŞKUN, CEO at Ad Astra Technology Group (AATG)<br/>
               <span className="font-bold text-cyan-300">12:15-12.30</span>&nbsp;&nbsp;“Space Awareness Activities of TUA”, Fatih DULKAN, VP at Turkish Space Agency (TUA)<br/>
               <span className="font-bold text-cyan-300">12:30-12.45</span>&nbsp;&nbsp;“Resilient Solar Energy for Defence & Space”, Dr. Güler KOÇAK, CEO at SPACELIS<br/>
-              <span className="font-bold text-cyan-300">12:45-13.00</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Mustafa HELVACI, Scientific Researcher at TUBITAK-UZAY / Executive Board Member at TÜRKSAT<br/>
+              <span className="font-bold text-cyan-300">12:45-13.00</span>&nbsp;&nbsp;“Economic and Security Dimensions of the Space Industry: A 25-Year Projection for the Communications Sector (2025–2050)” Dr. Mustafa HELVACI, Scientific Researcher at TUBITAK-UZAY / Executive Board Member at TÜRKSAT<br/>
               <span className="font-bold text-cyan-300">13:00-13.15</span>&nbsp;&nbsp; Invited Speaker / Davetli Konuşmacı * to be announced soon
             </div>
           </div>
@@ -69,7 +69,7 @@ const Programme = () => (
               <span className="block mb-1 text-cyan-200">MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda</span>
               <span className="block mb-1 text-cyan-200">Panelists:</span>
               <span className="block mb-1">Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University</span>
-              <span className="block mb-1">"TÜRKSAT Representative *Speaker information awaited" </span>
+              <span className="block mb-1">M. Fuat EROĞLU, Director of Satellite Data Services at TÜRKSAT </span>
               <span className="block mb-1">Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the UN AI Panel</span>
               <span className="block mb-1">Cem BİLSEL, Board Member at TUYAD</span>
               <span className="block mb-1">Prof. Dr. Lokman KUZU, Karabük Üniversity Electrical and Electronics Engineering Faculty Member| Chairman of the Board GSATCOM</span>
@@ -92,7 +92,7 @@ const Programme = () => (
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">  
               <span className="font-bold text-cyan-300">16:00-16:15</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO @iMARINE<br/>
-              <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp;“Topic is awaited”, Dr. Cevher Levent ERTÜRK, Project Manager at TÜBİTAK-UZAY<br/>
+              <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp;“TÜRKSAT 6A: A Landmark Achievement In National Geostationary Communication Satellite Development”, Dr. Cevher Levent ERTÜRK, Project Manager at TÜBİTAK-UZAY<br/>
               <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;Turkish Air Force Representative *Speaker information awaited<br/>
               <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;“Topic is awaited”, Kazım EFENDİOĞLU, Executive Coordinator at ULAK Haberleşme<br/>
               <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp;“Space Security in the Age of AI: Protecting Satellites, Ground Systems, and Mission Integrity”, Anıl YAĞIZ, Founder & CEO at Singularity<br/>

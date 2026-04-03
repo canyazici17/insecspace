@@ -63,18 +63,18 @@ export const conferenceData = {
       bio: 'linkedin23'
     },
     {
-      id: 1,
-      name: "Mehmet Ali Yazıcı",
-      title: "INSECSPACE Chairman",
-      image: "/Comitte22.jpeg",
-      bio: 'linkedin'
-    },
-    {
       id: 10,
       name: "Ömer Abdullah Karagözoğlu",
       title: "President of Turkish Information Technologies and Communication Authority (BTK)",
       image: "\Konuşmacı10.jpeg",
       bio: 'linkedin10'
+    },
+    {
+      id: 1,
+      name: "Mehmet Ali Yazıcı",
+      title: "INSECSPACE Chairman",
+      image: "/Comitte22.jpeg",
+      bio: 'linkedin'
     },
     {
       id: 11,
@@ -162,7 +162,7 @@ export const conferenceData = {
     },
      {
       id: 14,
-      name: "Medeni Soysal",
+      name: "Dr. Medeni Soysal",
       title: "Senior Chief Researcher at TÜBİTAK-UZAY",
       image: "\Konuşmacı14.jpeg",
       bio: 'linkedin14'
@@ -173,6 +173,13 @@ export const conferenceData = {
       title: "Project Manager at TÜBİTAK-UZAY",
       image: "\Konuşmacı15.jpeg",
       bio: ''
+    },
+    {
+      id: 25,
+      name: "M. Fuat EROĞLU",
+      title: "Director of Satellite Data Services at TÜRKSAT",
+      image: "\Konuşmacı25.jpeg",
+      bio: 'linkedin25'
     },
      {
       id: 16,
