@@ -128,7 +128,7 @@ export const conferenceData = {
     {
       id: 19,
       name: "Assoc. Prof. Dr. Şeyda Ertekin",
-      title: "Vice Head of METU BILTER Center | METU Computer Engineering Faculty Member",
+      title: "Vice Head of METU BILTIR Center | METU Computer Engineering Faculty Member",
       image: "\Konuşmacı19.jpeg",
       bio: 'linkedin19'
     },
@@ -201,6 +201,13 @@ export const conferenceData = {
       title: "Karabük Üniversity Electrical and Electronics Engineering Faculty Member| Chairman of the Board GSATCOM",
       image: "\Konuşmacı21.jpeg",
       bio: 'linkedin21'
+    },
+    {
+      id: 26,
+      name: "Cem Bilsel",
+      title: "Board Member at TUYAD",
+      image: "\Konuşmacı26.jpeg",
+      bio: 'linkedin26'
     },
     {
       id: 22,
