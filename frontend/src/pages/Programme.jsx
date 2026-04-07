@@ -55,7 +55,7 @@ const Programme = () => (
               <span className="font-bold text-cyan-300">12:15-12.30</span>&nbsp;&nbsp;“Space Awareness Activities of TUA”, Fatih DULKAN, VP at Turkish Space Agency (TUA)<br/>
               <span className="font-bold text-cyan-300">12:30-12.45</span>&nbsp;&nbsp;“Resilient Solar Energy for Defence & Space”, Dr. Güler KOÇAK, CEO at SPACELIS<br/>
               <span className="font-bold text-cyan-300">12:45-13.00</span>&nbsp;&nbsp;“Economic and Security Dimensions of the Space Industry: A 25-Year Projection for the Communications Sector (2025–2050)” Dr. Mustafa HELVACI, Scientific Researcher at TUBITAK UZAY / Executive Board Member at TÜRKSAT<br/>
-              <span className="font-bold text-cyan-300">13:00-13.15</span>&nbsp;&nbsp; Speaker information awaited
+              <span className="font-bold text-cyan-300">13:00-13.15</span>&nbsp;&nbsp;Speaker information awaited
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-32 min-h-0">
@@ -91,7 +91,7 @@ const Programme = () => (
               MODERATOR: Veli YANIKGÖNÜL, Satellite Technologies Director at TÜRKSAT<br/>
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">  
-              <span className="font-bold text-cyan-300">16:00-16:15</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO @iMARINE<br/>
+              <span className="font-bold text-cyan-300">16:00-16:15</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO at iMARINE<br/>
               <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp;“TÜRKSAT 6A: A Landmark Achievement In National Geostationary Communication Satellite Development”, Dr. Cevher Levent ERTÜRK, Project Manager at TÜBİTAK UZAY<br/>
               <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;Speaker information awaited<br/>
               <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;“Topic is awaited”, Kazım EFENDİOĞLU, Executive Coordinator at ULAK Haberleşme<br/>
