@@ -130,21 +130,24 @@ const SponsorsSection = ({ sponsors }) => {
                           <img src="/TUYAD.png" alt="TUYAD Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'gold' && idx === 0 ? (
-                          <img src="/SPACELİS.jpeg" alt="SPACELİS Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/Bronze1.jpeg" alt="CTECH Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'gold' && idx === 1 ? (
-                          <img src="/imarine.jpeg" alt="iMarine Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/SPACELİS.jpeg" alt="SPACELİS Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'gold' && idx === 2 ? (
-                          <img src="/MON IN.jpeg" alt="MON IN Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/imarine.jpeg" alt="iMarine Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'gold' && idx === 3 ? (
+                          <img src="/MON IN.jpeg" alt="MON IN Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                        {tier === 'gold' && idx === 4 ? (
                           <img src="/ICT_Certify.jpeg" alt="ICT Certify Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
-                         {tier === 'gold' && idx === 4 ? (
+                         {tier === 'gold' && idx === 5 ? (
                           <img src="/MCT.jpeg" alt="MCT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
-                        {tier === 'gold' && idx === 5 ? (
+                        {tier === 'gold' && idx === 6 ? (
                           <img src="/AktifNeser.jpeg" alt="Aktif Neser Elektronik Ltd. Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'silver' && idx === 0 ? (

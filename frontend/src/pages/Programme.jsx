@@ -70,7 +70,7 @@ const Programme = () => (
               <span className="block mb-1 text-cyan-200">Panelists:</span>
               <span className="block mb-1">Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University</span>
               <span className="block mb-1">M. Fuat EROĞLU, Director of Satellite Data Services at TÜRKSAT </span>
-              <span className="block mb-1">Prof. Dr. M. Bilge DEMİRKÖZ, Director at ODTÜ İVMER | Member of the UN AI Panel</span>
+              <span className="block mb-1">Hasan Hüseyin ERTOK, COO at Fergani Space </span>
               <span className="block mb-1">Cem BİLSEL, Board Member at TUYAD</span>
               <span className="block mb-1">Prof. Dr. Lokman KUZU, Karabük Üniversity Electrical and Electronics Engineering Faculty Member| Chairman of the Board GSATCOM</span>
             </div>

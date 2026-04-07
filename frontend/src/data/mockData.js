@@ -147,11 +147,11 @@ export const conferenceData = {
       bio: 'linkedin6'
     },
     {
-      id: 7,
-      name: "Kazım Efendioğlu",
-      title: "Executive Coordinator at ULAK Haberleşme",
-      image: "\Konuşmacı7.jpeg",
-      bio: 'linkedin7'
+      id: 27,
+      name: "Hasan Hüseyin Ertok",
+      title: "COO at Fergani Space",
+      image: "\Konuşmacı27.jpeg",
+      bio: 'linkedin27'
     },
     {
       id: 9,
@@ -201,6 +201,13 @@ export const conferenceData = {
       title: "Karabük Üniversity Electrical and Electronics Engineering Faculty Member| Chairman of the Board GSATCOM",
       image: "\Konuşmacı21.jpeg",
       bio: 'linkedin21'
+    },
+    {
+      id: 7,
+      name: "Kazım Efendioğlu",
+      title: "Executive Coordinator at ULAK Haberleşme",
+      image: "\Konuşmacı7.jpeg",
+      bio: 'linkedin7'
     },
     {
       id: 26,
@@ -254,6 +261,7 @@ export const conferenceData = {
     { id: 9, name: "TÜRKSAT", tier: "platinum" },
     { id: 10, name: "TÜBİTAK UZAY", tier: "platinum" },
     { id: 11, name: "TUYAD", tier: "platinum" },
+    { id: 3, name: "CTECH", tier: "gold" },
     { id: 3, name: "SPACELİS", tier: "gold" },
     { id: 4, name: "İMarine", tier: "gold" },
     { id: 12, name: "MON-IN", tier: "gold" },
