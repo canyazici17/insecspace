@@ -69,6 +69,13 @@ export const conferenceData = {
       image: "\Konuşmacı10.jpeg",
       bio: 'linkedin10'
     },
+     {
+      id: 29,
+      name: "Ahmet Hamdi Atalay",
+      title: "General Manager at TÜRKSAT",
+      image: "\Konuşmacı29.jpeg",
+      bio: 'linkedin29'
+    },
     {
       id: 1,
       name: "Mehmet Ali Yazıcı",
@@ -96,6 +103,13 @@ export const conferenceData = {
       title: "CEO at RSAT Space",
       image: "/RSAT CEO.jpeg",
       bio: ""
+    },
+    {
+      id: 28,
+      name: "Alexandre VALLET",
+      title: "Chief of Space Services Department at ITU",
+      image: "/Konuşmacı28.jpeg",
+      bio: "linkedin28"
     },
     {
       id: 13,
