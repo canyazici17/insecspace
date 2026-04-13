@@ -18,7 +18,8 @@ const SponsorsSection = ({ sponsors }) => {
     gold: 'from-yellow-400 to-yellow-600',
     silver: 'from-gray-300 to-gray-400',
     bronze: 'from-orange-400 to-orange-600',
-    badgeLanyard: 'from-pink-400 to-pink-600'
+      badgeLanyard: 'from-pink-400 to-pink-600',
+      globalComms: 'from-green-400 to-blue-500'
   };
 
   const tierSizes = {
@@ -26,7 +27,8 @@ const SponsorsSection = ({ sponsors }) => {
     gold: 'text-2xl',
     silver: 'text-2xl',
     bronze: 'text-2xl',
-    badgeLanyard: 'text-2xl'
+      badgeLanyard: 'text-2xl',
+      globalComms: 'text-2xl'
   };
 
   const groupedSponsors = sponsors.reduce((acc, sponsor) => {
@@ -36,6 +38,14 @@ const SponsorsSection = ({ sponsors }) => {
     acc[sponsor.tier].push(sponsor);
     return acc;
   }, {});
+    // Add a mock Global Communications Partner sponsor if not present
+    /*
+    if (!groupedSponsors['globalComms']) {
+      groupedSponsors['globalComms'] = [
+        { id: 'global-comms-1', name: 'Global Communications Partner' }
+      ];
+    }
+      */
 
   return (
     <section id="sponsors" className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black">
@@ -90,22 +100,23 @@ const SponsorsSection = ({ sponsors }) => {
 
         {/* Sponsors by Tier */}
         <div className="space-y-12">
-          {['platinum', 'gold', 'badgeLanyard', 'silver', 'bronze'].filter(tier => groupedSponsors[tier]).map(tier => (
+          {['platinum', 'globalComms', 'gold', 'badgeLanyard', 'silver', 'bronze'].filter(tier => groupedSponsors[tier]).map(tier => (
             <div key={tier}>
               {/* Tier Title */}
-              <div className={`text-center${tier === 'badgeLanyard' ? ' mt-20 mb-8' : ''}${tier === 'silver' ? ' mt-20 mb-8' : ''}${tier === 'gold' ? ' mt-20 mb-8' : ''}${tier === 'bronze' ? ' mt-20 mb-8' : tier !== 'silver' && tier !== 'gold' && tier !== 'bronze' && tier !== 'badgeLanyard' ? ' mb-8' : ''}`}> 
+              <div className={`text-center${tier === 'badgeLanyard' ? ' mt-20 mb-8' : ''}${tier === 'globalComms' ? ' mt-20 mb-8' : ''}${tier === 'silver' ? ' mt-20 mb-8' : ''}${tier === 'gold' ? ' mt-20 mb-8' : ''}${tier === 'bronze' ? ' mt-20 mb-8' : tier !== 'silver' && tier !== 'gold' && tier !== 'bronze' && tier !== 'badgeLanyard' && tier !== 'globalComms' ? ' mb-8' : ''}`}> 
                 <h3 className={`${tierSizes[tier]} font-bold uppercase tracking-wider bg-gradient-to-r ${tierColors[tier]} bg-clip-text text-transparent`}>
-                  {tier === 'platinum' ? 'Strategic Partner' : tier === 'gold' ? 'BRONZE SPONSORS' : tier === 'silver' ? 'Media Sponsor' : tier === 'bronze' ? 'Supporters' : tier === 'badgeLanyard' ? 'BADGE LANYARD SPONSOR' : `${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors`}
+                  {tier === 'platinum' ? 'Strategic Partner' :tier === 'globalComms' ? 'Global Communications Partner' : tier === 'gold' ? 'BRONZE SPONSORS' : tier === 'silver' ? 'Media Sponsor' : tier === 'bronze' ? 'Supporters' : tier === 'badgeLanyard' ? 'BADGE LANYARD SPONSOR' : `${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors`}
                 </h3>
               </div>
 
               {/* Sponsors Grid */}
               <div className={`grid gap-8 md:gap-12 ${
                 tier === 'platinum' ? 'md:grid-cols-2' : 
+                tier === 'globalComms' ? 'md:grid-cols-2' :
                 tier === 'gold' ? 'md:grid-cols-2' : 
                 tier === 'silver' ? 'md:grid-cols-2' :
                 'md:grid-cols-3'
-              }`}> 
+              }`}>
                 {groupedSponsors[tier].map((sponsor, idx) => (
                   <div
                     key={sponsor.id}
@@ -128,6 +139,9 @@ const SponsorsSection = ({ sponsors }) => {
                         ) : null}
                         {tier === 'platinum' && idx === 4 ? (
                           <img src="/TUYAD.png" alt="TUYAD Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
+                         {tier === 'globalComms' && idx === 0 ? (
+                          <img src="/AnadoluAjansı.jpeg" alt="Anadolu Ajansı Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'gold' && idx === 0 ? (
                           <img src="/Bronze1.jpeg" alt="CTECH Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
@@ -209,6 +223,7 @@ const SponsorsSection = ({ sponsors }) => {
                           tier === 'platinum' ? 'text-xl' :
                           tier === 'gold' ? 'text-xl' :
                           tier === 'silver' ? 'text-lg' :
+                          tier === 'globalComms' ? 'text-xl' :
                           'text-base'
                         }`}>
                           {sponsor.name}

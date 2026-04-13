@@ -275,6 +275,7 @@ export const conferenceData = {
     { id: 9, name: "TÜRKSAT", tier: "platinum" },
     { id: 10, name: "TÜBİTAK UZAY", tier: "platinum" },
     { id: 11, name: "TUYAD", tier: "platinum" },
+    { id: 27, name: "Anadolu Ajansı", tier: "globalComms" },
     { id: 3, name: "CTECH", tier: "gold" },
     { id: 3, name: "SPACELİS", tier: "gold" },
     { id: 4, name: "İMarine", tier: "gold" },
