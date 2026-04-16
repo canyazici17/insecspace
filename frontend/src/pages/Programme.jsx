@@ -42,6 +42,7 @@ const Programme = () => (
               <span className="text-white block mb-1">M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK UZAY</span>
               <span className="text-white block mb-1">Turkish Aerospace (TAI) Representative (*Speaker information awaited)</span>
               <span className="text-white block mb-1">Gurvinder CHOHAN, CEO at RSAT Space</span>
+              <span className="text-white block mb-1">Önder TATAR, Director of Product and ILS at CTech</span>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
@@ -79,15 +80,15 @@ const Programme = () => (
             <span className="font-bold text-cyan-300 text-lg">15:15-15:30</span>
             <span className="mt-2 text-white">COFFEE BREAK</span>
           </div>
-          <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-52 min-h-0">
+          <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-60 min-h-0">
             <span className="font-bold text-cyan-300 text-lg">15:30-15:45</span>
             <span className="block mb-1 text-yellow-300">Keynote Speech: “Space Domain Awareness” </span>
             <span className="mt-2 text-xs md:text-sm text-cyan-200">Gurvinder CHOHAN, CEO at RSAT Space</span>
           </div>
-          <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-52 min-h-0">
+          <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-60 min-h-0">
             <span className="font-bold text-cyan-300 text-lg">15:45-16:00</span>
             <span className="block mb-1 text-yellow-300">Keynote Speech “Radio Harmful Interference as a Security Threat to Satellite System”</span>
-            <span className="mt-2 text-xs md:text-sm text-cyan-200">Alexandre VALLET, Chief of Space Services Department at ITU</span>
+            <span className="mt-2 text-xs md:text-sm text-cyan-200">Dat VO, Radiocommunication Enginer, Space Services Department at International Telecommunication Union</span>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
             <span className="font-bold text-cyan-300 text-lg">16:00-17:30</span>
@@ -98,8 +99,8 @@ const Programme = () => (
             <div className="pl-6 text-sm md:text-base mt-1">  
               <span className="font-bold text-cyan-300">16:00-16:15</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO at iMARINE<br/>
               <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp;“TÜRKSAT 6A: A Landmark Achievement In National Geostationary Communication Satellite Development”, Dr. Cevher Levent ERTÜRK, Project Manager at TÜBİTAK UZAY<br/>
-              <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;Speaker information awaited<br/>
-              <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;“Topic is awaited”, Kazım EFENDİOĞLU, Executive Coordinator at ULAK Haberleşme<br/>
+              <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;"Autonomous Satellite Swarms", İhsan KÜSMEZ, CEO at TSPACE<br/>
+              <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;"AI-Native Autonomous Satellite Systems for the Transition from Data to Decision Intelligence", Dr. Ali BERKOL, Director at ULAK Haberleşme<br/>
               <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp;“Space Security in the Age of AI: Protecting Satellites, Ground Systems, and Mission Integrity”, Anıl YAĞIZ, Founder & CEO at Singularity<br/>
               <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp;“The Strategic Role of Satellite Communications in Modern Security Architectures”, Mehmet TOROS, CEO at MCT Telco Global <br/>
             </div>

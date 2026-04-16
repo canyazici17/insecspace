@@ -17,7 +17,8 @@ const MediaCenter = () => (
         { img: "/Comitte1.jpeg", name: "Mehmet Ali Yazıcı", desc: "INSECSPACE Chairman" },
         { img: "/Konuşmacı17.jpeg", name: "Veli Yanıkgönül", desc: "Satellite Technologies Director at TÜRKSAT" },
         { img: "/Comite3.jpeg", name: "Bayram Yıldız", desc: "Head of Space Systems, Missions and Technologies Department at TUA" },
-        { img: "/Comite2.jpeg", name: "Prof.Dr.Rüstem Alim Aslan", desc: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University" }      
+        { img: "/Comite2.jpeg", name: "Prof.Dr.Rüstem Alim Aslan", desc: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University" },  
+        { img: "/Comite5.jpeg", name: "Merve ÖZEK", desc: "Expert at TUBİTAK UZAY" }   
       ].map((member, idx) => (
         <div
           key={idx}

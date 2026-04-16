@@ -106,8 +106,8 @@ export const conferenceData = {
     },
     {
       id: 28,
-      name: "Alexandre VALLET",
-      title: "Chief of Space Services Department at ITU",
+      name: "Dat VO",
+      title: "Radiocommunication Engineer, Space Services Department at International Telecommunication Union",
       image: "/Konuşmacı28.jpeg",
       bio: "linkedin28"
     },
@@ -217,9 +217,16 @@ export const conferenceData = {
       bio: 'linkedin21'
     },
     {
+      id: 30,
+      name: "Önder TATAR",
+      title: "Director of Product and ILS at CTech",
+      image: "\Konuşmacı30.jpeg",
+      bio: 'linkedin30'
+    },
+    {
       id: 7,
-      name: "Kazım Efendioğlu",
-      title: "Executive Coordinator at ULAK Haberleşme",
+      name: "Dr. Ali Berkol",
+      title: "Director at ULAK Haberleşme",
       image: "\Konuşmacı7.jpeg",
       bio: 'linkedin7'
     },
@@ -236,6 +243,13 @@ export const conferenceData = {
       title: "Founder & CEO at Singularity",
       image: "\Konuşmacı22.jpeg",
       bio: 'linkedin22'
+    },
+    {
+      id: 31,
+      name: "İhsan Küsmez",
+      title: "CEO at TSPACE",
+      image: "\Konuşmacı31.jpeg",
+      bio: 'linkedin31'
     }
   ],
 
