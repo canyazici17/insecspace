@@ -14,6 +14,7 @@ const whySponsorFooter = `Sponsoring INSECSPACE 2026 positions your organization
 
 const SponsorsSection = ({ sponsors }) => {
   const tierColors = {
+    main : 'from-cyan-500 to-blue-600',
     platinum: 'from-cyan-400 to-blue-400',
     gold: 'from-yellow-400 to-yellow-600',
     silver: 'from-gray-300 to-gray-400',
@@ -23,6 +24,7 @@ const SponsorsSection = ({ sponsors }) => {
   };
 
   const tierSizes = {
+    main : 'text-4xl',
     platinum: 'text-3xl',
     gold: 'text-2xl',
     silver: 'text-2xl',
@@ -100,17 +102,18 @@ const SponsorsSection = ({ sponsors }) => {
 
         {/* Sponsors by Tier */}
         <div className="space-y-12">
-          {['platinum', 'globalComms', 'gold', 'badgeLanyard', 'silver', 'bronze'].filter(tier => groupedSponsors[tier]).map(tier => (
+          {[ 'main', 'platinum', 'globalComms', 'gold', 'badgeLanyard', 'silver', 'bronze'].filter(tier => groupedSponsors[tier]).map(tier => (
             <div key={tier}>
               {/* Tier Title */}
-              <div className={`text-center${tier === 'badgeLanyard' ? ' mt-20 mb-8' : ''}${tier === 'globalComms' ? ' mt-20 mb-8' : ''}${tier === 'silver' ? ' mt-20 mb-8' : ''}${tier === 'gold' ? ' mt-20 mb-8' : ''}${tier === 'bronze' ? ' mt-20 mb-8' : tier !== 'silver' && tier !== 'gold' && tier !== 'bronze' && tier !== 'badgeLanyard' && tier !== 'globalComms' ? ' mb-8' : ''}`}> 
+              <div className={`text-center${tier === 'main' ? ' mt-20 mb-8' : ''}${tier === 'platinum' ? ' mt-20 mb-8' : ''}${tier === 'badgeLanyard' ? ' mt-20 mb-8' : ''}${tier === 'globalComms' ? ' mt-20 mb-8' : ''}${tier === 'silver' ? ' mt-20 mb-8' : ''}${tier === 'gold' ? ' mt-20 mb-8' : ''}${tier === 'bronze' ? ' mt-20 mb-8' : tier !== 'silver' && tier !== 'gold' && tier !== 'bronze' && tier !== 'badgeLanyard' && tier !== 'main' &&  tier !=='platinum' && tier !== 'globalComms' ? ' mb-8' : ''}`}> 
                 <h3 className={`${tierSizes[tier]} font-bold uppercase tracking-wider bg-gradient-to-r ${tierColors[tier]} bg-clip-text text-transparent`}>
-                  {tier === 'platinum' ? 'Strategic Partner' :tier === 'globalComms' ? 'Global Communications Partner' : tier === 'gold' ? 'BRONZE SPONSORS' : tier === 'silver' ? 'Media Sponsor' : tier === 'bronze' ? 'Supporters' : tier === 'badgeLanyard' ? 'BADGE LANYARD SPONSOR' : `${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors`}
+                  {tier === 'platinum' ? 'Strategic Partner' :tier === 'globalComms' ? 'Global Communications Partner' : tier === 'gold' ? 'BRONZE SPONSORS' : tier === 'silver' ? 'Media Sponsor' : tier === 'bronze' ? 'Supporters' : tier === 'badgeLanyard' ? 'BADGE LANYARD SPONSOR' : tier === 'main' ? 'MAIN SPONSOR' : `${tier.charAt(0).toUpperCase() + tier.slice(1)} Sponsors`}
                 </h3>
               </div>
 
               {/* Sponsors Grid */}
               <div className={`grid gap-8 md:gap-12 ${
+                tier === 'main' ? 'md:grid-cols-2' :
                 tier === 'platinum' ? 'md:grid-cols-2' : 
                 tier === 'globalComms' ? 'md:grid-cols-2' :
                 tier === 'gold' ? 'md:grid-cols-2' : 
@@ -125,6 +128,9 @@ const SponsorsSection = ({ sponsors }) => {
                     {/* Sponsor Name (Placeholder Logo) */}
                     <div className="flex items-center justify-center h-24 w-full">
                       <div className="text-center w-full">
+                        {tier === 'main' && idx === 0 ? (
+                          <img src="/türksat.jpg" alt="TÜRKSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
                         {tier === 'platinum' && idx === 0 ? (
                           <img src="/turkiye-uzay-ajansi-tua-logo-png_seeklogo-397524.png" alt="TUA Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
@@ -132,12 +138,9 @@ const SponsorsSection = ({ sponsors }) => {
                           <img src="/BilgiTeknolojileri.png" alt="BTK Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'platinum' && idx === 2 ? (
-                          <img src="/türksat.jpg" alt="TÜRKSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
-                        ) : null}
-                        {tier === 'platinum' && idx === 3 ? (
                           <img src="/Tübitak.jpeg" alt="TÜBİTAK Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
-                        {tier === 'platinum' && idx === 4 ? (
+                        {tier === 'platinum' && idx === 3 ? (
                           <img src="/TUYAD.png" alt="TUYAD Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                          {tier === 'globalComms' && idx === 0 ? (
@@ -220,6 +223,7 @@ const SponsorsSection = ({ sponsors }) => {
                         ) : null}
                        
                         <div className={`font-bold uppercase tracking-wider text-gray-400 group-hover:bg-gradient-to-r group-hover:${tierColors[tier]} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
+                           tier === 'main' ? 'text-xl' :
                           tier === 'platinum' ? 'text-xl' :
                           tier === 'gold' ? 'text-xl' :
                           tier === 'silver' ? 'text-lg' :

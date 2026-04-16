@@ -284,12 +284,12 @@ export const conferenceData = {
   ],
 
   sponsors: [
+     { id: 9, name: "TÜRKSAT", tier: "main" },
     { id: 1, name: "Türkiye Uzay Ajansı (TUA)", tier: "platinum" },
     { id: 2, name: "Bilgi Teknolojileri ve İletişim Kurumu (BTK)", tier: "platinum" },
-    { id: 9, name: "TÜRKSAT", tier: "platinum" },
     { id: 10, name: "TÜBİTAK UZAY", tier: "platinum" },
     { id: 11, name: "TUYAD", tier: "platinum" },
-    { id: 27, name: "Anadolu Ajansı", tier: "globalComms" },
+    { id: 29, name: "Anadolu Ajansı", tier: "globalComms" },
     { id: 3, name: "CTECH", tier: "gold" },
     { id: 3, name: "SPACELİS", tier: "gold" },
     { id: 4, name: "İMarine", tier: "gold" },
@@ -299,7 +299,7 @@ export const conferenceData = {
     { id: 27, name: "Aktif Neser Elektronik Ltd.", tier: "gold" },
     { id: 5, name: " ICT MEDIA", tier: "silver" },
     { id: 21, name: "RSAT", tier: "badgeLanyard" },
-    { id: 27, name: "AIPA", tier: "bronze" },
+    { id: 28, name: "AIPA", tier: "bronze" },
     { id: 7, name: "TÜYAFED", tier: "bronze" },
     { id: 14, name: "TOSYÖV", tier: "bronze" },
     { id: 15, name: "KAMUYZ", tier: "bronze" },
