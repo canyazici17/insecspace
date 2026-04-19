@@ -284,7 +284,7 @@ export const conferenceData = {
   ],
 
   sponsors: [
-     { id: 9, name: "TÜRKSAT", tier: "main" },
+    { id: 9, name: "TÜRKSAT", tier: "main" },
     { id: 1, name: "Türkiye Uzay Ajansı (TUA)", tier: "platinum" },
     { id: 2, name: "Bilgi Teknolojileri ve İletişim Kurumu (BTK)", tier: "platinum" },
     { id: 10, name: "TÜBİTAK UZAY", tier: "platinum" },
@@ -315,6 +315,7 @@ export const conferenceData = {
     { id: 25, name: "İst.Rad.P.T.TV T.Odası", tier: "bronze" },
     { id: 26, name: "SinerjiTürk", tier: "bronze" },
     { id: 17, name: "İhracat Kapısı Platformu", tier: "bronze" },
+    { id: 30, name: "Tspace", tier: "bronze" },
   ]
 };
 

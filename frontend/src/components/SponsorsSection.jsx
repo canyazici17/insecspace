@@ -118,12 +118,13 @@ const SponsorsSection = ({ sponsors }) => {
                 tier === 'globalComms' ? 'md:grid-cols-2' :
                 tier === 'gold' ? 'md:grid-cols-2' : 
                 tier === 'silver' ? 'md:grid-cols-2' :
+                tier === 'badgeLanyard' ? 'md:grid-cols-2' :
                 'md:grid-cols-3'
               }`}>
                 {groupedSponsors[tier].map((sponsor, idx) => (
                   <div
                     key={sponsor.id}
-                    className="group relative bg-gradient-to-br from-gray-900 to-black border border-cyan-500/30 rounded-2xl p-10 flex flex-col items-center justify-center hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20"
+                    className="group relative bg-white border border-cyan-500/30 rounded-2xl p-10 flex flex-col items-center justify-center hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20"
                   >
                     {/* Sponsor Name (Placeholder Logo) */}
                     <div className="flex items-center justify-center h-24 w-full">
@@ -132,7 +133,7 @@ const SponsorsSection = ({ sponsors }) => {
                           <img src="/türksat.jpg" alt="TÜRKSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'platinum' && idx === 0 ? (
-                          <img src="/turkiye-uzay-ajansi-tua-logo-png_seeklogo-397524.png" alt="TUA Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                          <img src="/tua.jpg" alt="TUA Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                         {tier === 'platinum' && idx === 1 ? (
                           <img src="/BilgiTeknolojileri.png" alt="BTK Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
@@ -218,17 +219,22 @@ const SponsorsSection = ({ sponsors }) => {
                          {tier === 'bronze' && idx === 15 ? (
                           <img src="/İKP.jpeg" alt="İKP Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
+                         {tier === 'bronze' && idx === 16 ? (
+                          <img src="/Tspace.jpeg" alt="Tspace Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
                         {tier === 'badgeLanyard' && idx === 0 ? (
                           <img src="/RSAT.jpeg" alt="RSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
                        
-                        <div className={`font-bold uppercase tracking-wider text-gray-400 group-hover:bg-gradient-to-r group-hover:${tierColors[tier]} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
-                           tier === 'main' ? 'text-xl' :
-                          tier === 'platinum' ? 'text-xl' :
-                          tier === 'gold' ? 'text-xl' :
-                          tier === 'silver' ? 'text-lg' :
-                          tier === 'globalComms' ? 'text-xl' :
-                          'text-base'
+                        <div className={`font-bold uppercase tracking-wider text-black group-hover:bg-gradient-to-r group-hover:${tierColors[tier]} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
+                           tier === 'main' ? 'text-sm' :
+                          tier === 'platinum' ? 'text-sm' :
+                          tier === 'gold' ? 'text-sm' :
+                          tier === 'silver' ? 'text-sm' :
+                          tier === 'globalComms' ? 'text-sm' :
+                          tier === 'badgeLanyard' ? 'text-sm' :
+                          tier === 'bronze' ? 'text-sm' :
+                          'text-xs'
                         }`}>
                           {sponsor.name}
                         </div>
