@@ -22,7 +22,7 @@ const Programme = () => (
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4">
             <span className="font-bold text-cyan-300 text-lg">09:35-10:45</span>
-            <span className="mt-2 text-white">OPENING SPEECHES</span>
+            <span className="mt-2 text-white">OPENING SPEECHES | PLAQUE CEREMONY</span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
               <span className="block mb-1">Ali YAZICI, INSECSPACE’2026 Conference President</span>
               <span className="block mb-1">Ahmet Hamdi ATALAY, TÜRKSAT General Manager</span>
@@ -56,7 +56,6 @@ const Programme = () => (
               <span className="font-bold text-cyan-300">12:15-12.30</span>&nbsp;&nbsp;“Space Awareness Activities of TUA”, Fatih DULKAN, VP at Turkish Space Agency (TUA)<br/>
               <span className="font-bold text-cyan-300">12:30-12.45</span>&nbsp;&nbsp;“Resilient Solar Energy for Defence & Space”, Dr. Güler KOÇAK, CEO at SPACELIS<br/>
               <span className="font-bold text-cyan-300">12:45-13.00</span>&nbsp;&nbsp;“Economic and Security Dimensions of the Space Industry: A 25-Year Projection for the Communications Sector (2025–2050)” Dr. Mustafa HELVACI, Scientific Researcher at TUBITAK UZAY / Executive Board Member at TÜRKSAT<br/>
-              <span className="font-bold text-cyan-300">13:00-13.15</span>&nbsp;&nbsp;Speaker information awaited
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-32 min-h-0">
