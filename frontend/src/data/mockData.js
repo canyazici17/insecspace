@@ -112,6 +112,13 @@ export const conferenceData = {
       bio: "linkedin28"
     },
     {
+      id: 33,
+      name: "DR. Onur Tarakçıoğlu",
+      title: "Executive Vise President, Space System, TUSAŞ",
+      image: "\Konuşmacı33.jpeg",
+      bio: 'linkedin33'
+    },
+    {
       id: 13,
       name: "Veli Yanıkgönül",
       title: "Satellite Technologies Director at TÜRKSAT",
@@ -201,13 +208,6 @@ export const conferenceData = {
       title: "CEO at Ad Astra Technology Group (AATG)",
       image: "\Konuşmacı16.jpeg",
       bio: 'linkedin16'
-    },
-     {
-      id: 18,
-      name: "Mehmet Toros",
-      title: "CEO at MCT Telco Global",
-      image: "\Konuşmacı18.jpeg",
-      bio: 'linkedin18'
     },
     {
       id: 21,
