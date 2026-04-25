@@ -96,7 +96,7 @@ const Programme = () => (
               MODERATOR: Fatih AYHAN, Satellite Programs Director, TÜRKSAT<br/>
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">  
-              <span className="font-bold text-cyan-300">16:00-16:15</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO at iMARINE<br/>
+              <span className="font-bold text-cyan-300">16:00-16:15</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder VAROL, CEO at iMARINE<br/>
               <span className="font-bold text-cyan-300">16:15-16.30</span>&nbsp;&nbsp;“TÜRKSAT 6A: A Landmark Achievement In National Geostationary Communication Satellite Development”, Dr. Cevher Levent ERTÜRK, Project Manager at TÜBİTAK UZAY<br/>
               <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;"Autonomous Satellite Swarms", İhsan KÜSMEZ, CEO at TSPACE<br/>
               <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;"AI-Native Autonomous Satellite Systems for the Transition from Data to Decision Intelligence", Dr. Ali BERKOL, Director at ULAK Haberleşme<br/>

@@ -64,28 +64,28 @@ export const conferenceData = {
     },
     {
       id: 10,
-      name: "Ömer Abdullah Karagözoğlu",
+      name: "Ömer Abdullah KARAGÖZOĞLU",
       title: "President of Turkish Information Technologies and Communication Authority (BTK)",
       image: "\Konuşmacı10.jpeg",
       bio: 'linkedin10'
     },
      {
       id: 29,
-      name: "Ahmet Hamdi Atalay",
+      name: "Ahmet Hamdi ATALAY",
       title: "General Manager at TÜRKSAT",
       image: "\Konuşmacı29.jpeg",
       bio: 'linkedin29'
     },
     {
       id: 1,
-      name: "Mehmet Ali Yazıcı",
+      name: "Mehmet Ali YAZICI",
       title: "INSECSPACE Chairman",
       image: "/Comitte22.jpeg",
       bio: 'linkedin'
     },
     {
       id: 8,
-      name: "M. Mehmet Nefes",
+      name: "M. Mehmet NEFES",
       title: "Director / Chairman of the Board at TÜBİTAK UZAY",
       image: "\Konuşmacı8.jpeg",
       bio: 'linkedin8'
@@ -106,84 +106,84 @@ export const conferenceData = {
     },
     {
       id: 33,
-      name: "DR. Onur Tarakçıoğlu",
+      name: "DR. Onur TARAKÇIOĞLU",
       title: "Executive Vise President, Space System, TUSAŞ",
       image: "\Konuşmacı33.jpeg",
       bio: 'linkedin33'
     },
     {
       id: 13,
-      name: "Veli Yanıkgönül",
+      name: "Veli YANIKGÖNÜL",
       title: "Satellite Technologies Director at TÜRKSAT",
       image: "/Konuşmacı17.jpeg",
       bio: "linkedin13"
     },
     {
       id: 2,
-      name: "Prof.Dr.Rüstem Alim Aslan",
+      name: "Prof.Dr.Rüstem Alim ASLAN",
       title: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University",
       image: "\Comite2.jpeg",
       bio: 'linkedin2'
     },
     {
       id: 3,
-      name: "Fatih Dulkan",
+      name: "Fatih DULKAN",
       title: "VP at Turkish Space Agency (TUA)",
       image: "\Konuşmacı20.jpeg",
       bio: ''
     },
     {
       id: 4,
-      name: "DR. Ejder Varol",
+      name: "DR. Ejder VAROL",
       title: "CEO AT iMARINE",
       image: "\Konuşmacı4.jpeg",
       bio: 'linkedin4'
     },
     {
       id: 19,
-      name: "Assoc. Prof. Dr. Şeyda Ertekin",
+      name: "Assoc. Prof. Dr. Şeyda ERTEKİN",
       title: "Vice Head of METU BILTIR Center | METU Computer Engineering Faculty Member",
       image: "\Konuşmacı19.jpeg",
       bio: 'linkedin19'
     },
     {
       id: 5,
-      name: "Dr. Güler Koçak",
+      name: "Dr. Güler KOÇAK",
       title: "CEO AT SPACELIS",
       image: "\Konuşmacı5.jpeg",
       bio: 'linkedin5'
     },
     {
       id: 6,
-      name: "Halit Mirahmetoğlu",
+      name: "Halit MİRAHMETOĞLU",
       title: "Director at Space Agenda",
       image: "\Konuşmacı6.jpeg",
       bio: 'linkedin6'
     },
     {
       id: 27,
-      name: "Hasan Hüseyin Ertok",
+      name: "Hasan Hüseyin ERTOK",
       title: "COO at Fergani Space",
       image: "\Konuşmacı27.jpeg",
       bio: 'linkedin27'
     },
     {
       id: 9,
-      name: "Dr. Mustafa Helvacı",
+      name: "Dr. Mustafa HELVACI",
       title: "Scientific Researcher at TUBITAK UZAY / Executive Board Member at TÜRKSAT",
       image: "\Konuşmacı9.jpeg",
       bio: 'linkedin9'
     },
      {
       id: 14,
-      name: "Dr. Medeni Soysal",
+      name: "Dr. Medeni SOYSAL",
       title: "Senior Chief Researcher at TÜBİTAK UZAY",
       image: "\Konuşmacı14.jpeg",
       bio: 'linkedin14'
     },
      {
       id: 15,
-      name: "Dr. Cevher Levent Ertürk",
+      name: "Dr. Cevher Levent ERTÜRK",
       title: "Project Manager at TÜBİTAK UZAY",
       image: "\Konuşmacı15.jpeg",
       bio: ''
@@ -197,7 +197,7 @@ export const conferenceData = {
     },
      {
       id: 16,
-      name: "Uğur Coşkun",
+      name: "Uğur COŞKUN",
       title: "CEO at Ad Astra Technology Group (AATG)",
       image: "\Konuşmacı16.jpeg",
       bio: 'linkedin16'
@@ -218,35 +218,35 @@ export const conferenceData = {
     },
     {
       id: 7,
-      name: "Dr. Ali Berkol",
+      name: "Dr. Ali BERKOL",
       title: "Director at ULAK Haberleşme",
       image: "\Konuşmacı7.jpeg",
       bio: 'linkedin7'
     },
     {
       id: 26,
-      name: "Cem Bilsel",
+      name: "Cem BİLSEL",
       title: "Board Member at TUYAD",
       image: "\Konuşmacı26.jpeg",
       bio: 'linkedin26'
     },
     {
       id: 22,
-      name: "Anıl Yağız",
+      name: "Anıl YAĞIZ",
       title: "Founder & CEO at Singularity",
       image: "\Konuşmacı22.jpeg",
       bio: 'linkedin22'
     },
     {
       id: 31,
-      name: "İhsan Küsmez",
+      name: "İhsan KÜSMEZ",
       title: "CEO at TSPACE",
       image: "\Konuşmacı31.jpeg",
       bio: 'linkedin31'
     },
     {
       id: 32,
-      name: "Fatih Ayhan",
+      name: "Fatih AYHAN",
       title: "Satellite Programs Director at TÜRKSAT",
       image: "\Konuşmacı34.jpeg",
       bio: 'linkedin32'
