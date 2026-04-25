@@ -38,7 +38,7 @@ const Programme = () => (
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
               MODERATOR: Assoc. Prof. Dr. Şeyda ERTEKİN, Vice Head of METU BILTIR Center | METU Computer Engineering Faculty Member<br/>
               Panelists:<br/>
-              <span className="text-white block mb-1">Dr. Selman DEMİREL, VP of Satellite Operations at TURKSAT</span>
+              <span className="text-white block mb-1">Veli YANIKGÖNÜL, Satellite Spectrum and Operations Director, TÜRKSAT</span>
               <span className="text-white block mb-1">M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK UZAY</span>
               <span className="text-white block mb-1">Dr. Onur TARAKÇIOĞLU, Executive Vise President, Space System, TUSAŞ</span>
               <span className="text-white block mb-1">Gurvinder CHOHAN, CEO at RSAT Space</span>
@@ -53,7 +53,7 @@ const Programme = () => (
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">
               <span className="font-bold text-cyan-300">12:00-12.15</span>&nbsp;&nbsp;“Space Debris Risk and Mitigation Methods”, Uğur COŞKUN, CEO at Ad Astra Technology Group (AATG)<br/>
-              <span className="font-bold text-cyan-300">12:15-12.30</span>&nbsp;&nbsp;“Space Awareness Activities of TUA”, Fatih DULKAN, VP at Turkish Space Agency (TUA)<br/>
+              <span className="font-bold text-cyan-300">12:15-12.30</span>&nbsp;&nbsp;“Space Economy & Space Security”, Fatih DULKAN, VP at Turkish Space Agency (TUA)<br/>
               <span className="font-bold text-cyan-300">12:30-12.45</span>&nbsp;&nbsp;“Resilient Solar Energy for Defence & Space”, Dr. Güler KOÇAK, CEO at SPACELIS<br/>
               <span className="font-bold text-cyan-300">12:45-13.00</span>&nbsp;&nbsp;“Economic and Security Dimensions of the Space Industry: A 25-Year Projection for the Communications Sector (2025–2050)” Dr. Mustafa HELVACI, Scientific Researcher at TUBITAK UZAY / Executive Board Member at TÜRKSAT<br/>
             </div>
@@ -93,7 +93,7 @@ const Programme = () => (
             <span className="font-bold text-cyan-300 text-lg">16:00-17:30</span>
             <span className="mt-2 text-white">SESSION-4: <span className="text-yellow-300">FUTURE SATELLITES TECHNOLOGIES / GELECEK UYDU TEKNOLOJİLERİ</span></span>
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
-              MODERATOR: Veli YANIKGÖNÜL, Satellite Technologies Director at TÜRKSAT<br/>
+              MODERATOR: Fatih AYHAN, Satellite Programs Director, TÜRKSAT<br/>
             </div>
             <div className="pl-6 text-sm md:text-base mt-1">  
               <span className="font-bold text-cyan-300">16:00-16:15</span>&nbsp;&nbsp;“Secure Maritime Traffic Control via Satellites”, Dr. Ejder Varol, CEO at iMARINE<br/>
@@ -101,6 +101,7 @@ const Programme = () => (
               <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;"Autonomous Satellite Swarms", İhsan KÜSMEZ, CEO at TSPACE<br/>
               <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;"AI-Native Autonomous Satellite Systems for the Transition from Data to Decision Intelligence", Dr. Ali BERKOL, Director at ULAK Haberleşme<br/>
               <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp;“Space Security in the Age of AI: Protecting Satellites, Ground Systems, and Mission Integrity”, Anıl YAĞIZ, Founder & CEO at Singularity<br/>
+              <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp;“Topic is awaited”, Gürkan SENCAR, CEO, Profen<br/>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-36 min-h-0">

@@ -84,13 +84,6 @@ export const conferenceData = {
       bio: 'linkedin'
     },
     {
-      id: 11,
-      name: "Dr. Selman Demirel",
-      title: "WP of Satellite Operations at TURKSAT",
-      image: "\Konuşmacı11.jpeg",
-      bio: 'linkedin11'
-    },
-    {
       id: 8,
       name: "M. Mehmet Nefes",
       title: "Director / Chairman of the Board at TÜBİTAK UZAY",
@@ -250,6 +243,20 @@ export const conferenceData = {
       title: "CEO at TSPACE",
       image: "\Konuşmacı31.jpeg",
       bio: 'linkedin31'
+    },
+    {
+      id: 32,
+      name: "Fatih Ayhan",
+      title: "Satellite Programs Director at TÜRKSAT",
+      image: "\Konuşmacı34.jpeg",
+      bio: 'linkedin32'
+    },
+     {
+      id: 34,
+      name: "Gürkan SENCAR",
+      title: "Satellite Programs Director at TÜRKSAT",
+      image: "\Konuşmacı35.jpeg",
+      bio: 'linkedin34'
     }
   ],
 
