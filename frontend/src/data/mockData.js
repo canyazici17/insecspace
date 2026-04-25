@@ -114,7 +114,7 @@ export const conferenceData = {
     {
       id: 13,
       name: "Veli YANIKGÖNÜL",
-      title: "Satellite Technologies Director at TÜRKSAT",
+      title: "Satellite Spectrum and Operations Director at TÜRKSAT",
       image: "/Konuşmacı17.jpeg",
       bio: "linkedin13"
     },
@@ -191,7 +191,7 @@ export const conferenceData = {
     {
       id: 25,
       name: "M. Fuat EROĞLU",
-      title: "Director of Satellite Data Services at TÜRKSAT",
+      title: "Satellite Business Development and Sales Director at TÜRKSAT",
       image: "\Konuşmacı25.jpeg",
       bio: 'linkedin25'
     },
@@ -254,7 +254,7 @@ export const conferenceData = {
      {
       id: 34,
       name: "Gürkan SENCAR",
-      title: "Satellite Programs Director at TÜRKSAT",
+      title: "CEO at ICT-PROFEN",
       image: "\Konuşmacı35.jpeg",
       bio: 'linkedin34'
     }

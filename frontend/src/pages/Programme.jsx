@@ -38,7 +38,7 @@ const Programme = () => (
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
               MODERATOR: Assoc. Prof. Dr. Şeyda ERTEKİN, Vice Head of METU BILTIR Center | METU Computer Engineering Faculty Member<br/>
               Panelists:<br/>
-              <span className="text-white block mb-1">Veli YANIKGÖNÜL, Satellite Spectrum and Operations Director, TÜRKSAT</span>
+              <span className="text-white block mb-1">Veli YANIKGÖNÜL, Satellite Spectrum and Operations Director at TÜRKSAT</span>
               <span className="text-white block mb-1">M. Mehmet NEFES, Director / Chairman of the Board at TÜBİTAK UZAY</span>
               <span className="text-white block mb-1">Dr. Onur TARAKÇIOĞLU, Executive Vise President, Space System, TUSAŞ</span>
               <span className="text-white block mb-1">Gurvinder CHOHAN, CEO at RSAT Space</span>
@@ -69,7 +69,7 @@ const Programme = () => (
               <span className="block mb-1 text-cyan-200">MODERATOR: Halit MİRAHMETOĞLU, Managing Director at Space Agenda</span>
               <span className="block mb-1 text-cyan-200">Panelists:</span>
               <span className="block mb-1">Prof. Dr. Rüstem Alim ASLAN, Manager of Space Systems Design and Test Laboratory at Istanbul Technical University</span>
-              <span className="block mb-1">M. Fuat EROĞLU, Director of Satellite Data Services at TÜRKSAT </span>
+              <span className="block mb-1">M. Fuat EROĞLU, Satellite Business Development and Sales Director at TÜRKSAT </span>
               <span className="block mb-1">Hasan Hüseyin ERTOK, COO at Fergani Space </span>
               <span className="block mb-1">Cem BİLSEL, Board Member at TUYAD</span>
               <span className="block mb-1">Prof. Dr. Lokman KUZU, Karabük Üniversity Electrical and Electronics Engineering Faculty Member| Chairman of the Board GSATCOM</span>
@@ -101,7 +101,7 @@ const Programme = () => (
               <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;"Autonomous Satellite Swarms", İhsan KÜSMEZ, CEO at TSPACE<br/>
               <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;"AI-Native Autonomous Satellite Systems for the Transition from Data to Decision Intelligence", Dr. Ali BERKOL, Director at ULAK Haberleşme<br/>
               <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp;“Space Security in the Age of AI: Protecting Satellites, Ground Systems, and Mission Integrity”, Anıl YAĞIZ, Founder & CEO at Singularity<br/>
-              <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp;“Topic is awaited”, Gürkan SENCAR, CEO, Profen<br/>
+              <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp;“Topic is awaited”, Gürkan SENCAR, CEO, ICT-PROFEN<br/>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-36 min-h-0">
