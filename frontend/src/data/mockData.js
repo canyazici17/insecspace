@@ -254,7 +254,7 @@ export const conferenceData = {
      {
       id: 34,
       name: "Gürkan SENCAR",
-      title: "CEO at ICT-PROFEN",
+      title: "VP, Managed Services, Profen",
       image: "\Konuşmacı35.jpeg",
       bio: 'linkedin34'
     }
