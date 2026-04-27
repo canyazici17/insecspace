@@ -222,6 +222,9 @@ const SponsorsSection = ({ sponsors }) => {
                          {tier === 'bronze' && idx === 16 ? (
                           <img src="/Tspace.jpeg" alt="Tspace Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}
+                         {tier === 'bronze' && idx === 17 ? (
+                          <img src="/e-Safe.jpeg" alt="e-Safe Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
+                        ) : null}
                         {tier === 'badgeLanyard' && idx === 0 ? (
                           <img src="/RSAT.jpeg" alt="RSAT Logo" className="mx-auto mb-2 h-20 w-auto object-contain" />
                         ) : null}

@@ -101,7 +101,7 @@ const Programme = () => (
               <span className="font-bold text-cyan-300">16:30-16.45</span>&nbsp;&nbsp;"Autonomous Satellite Swarms", İhsan KÜSMEZ, CEO at TSPACE<br/>
               <span className="font-bold text-cyan-300">16:45-17.00</span>&nbsp;&nbsp;"AI-Native Autonomous Satellite Systems for the Transition from Data to Decision Intelligence", Dr. Ali BERKOL, Director at ULAK Haberleşme<br/>
               <span className="font-bold text-cyan-300">17:00-17.15</span>&nbsp;&nbsp;“Space Security in the Age of AI: Protecting Satellites, Ground Systems, and Mission Integrity”, Anıl YAĞIZ, Founder & CEO at Singularity<br/>
-              <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp;“Topic is awaited”, Gürkan SENCAR, CEO, ICT-PROFEN<br/>
+              <span className="font-bold text-cyan-300">17:15-17.30</span>&nbsp;&nbsp;“Multi-Orbit Satellite Services”, Gürkan SENCAR, CEO, ICT-PROFEN<br/>
             </div>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col mb-4 h-36 min-h-0">
