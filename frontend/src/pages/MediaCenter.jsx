@@ -14,11 +14,12 @@ const MediaCenter = () => (
     </div>
     <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-8 px-4">
       {[
-        { img: "/Comitte1.jpeg", name: "Mehmet Ali Yazıcı", desc: "INSECSPACE Chairman" },
-        { img: "/Konuşmacı17.jpeg", name: "Veli Yanıkgönül", desc: "Satellite Technologies Director at TÜRKSAT" },
-        { img: "/Comite3.jpeg", name: "Bayram Yıldız", desc: "Head of Space Systems, Missions and Technologies Department at TUA" },
-        { img: "/Comite2.jpeg", name: "Prof.Dr.Rüstem Alim Aslan", desc: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University" },  
-        { img: "/Comite5.jpeg", name: "Merve ÖZEK", desc: "Expert at TUBİTAK UZAY" }   
+        { img: "/Comitte1.jpeg", name: "Mehmet Ali YAZICI", desc: "INSECSPACE Chairman" },
+        { img: "/Konuşmacı17.jpeg", name: "Veli YANIKGÖNÜL", desc: "Satellite Technologies Director at TÜRKSAT" },
+        { img: "/Comite3.jpeg", name: "Bayram YILDIZ", desc: "Head of Space Systems, Missions and Technologies Department at TUA" },
+        { img: "/Comite2.jpeg", name: "Prof.Dr.Rüstem Alim ASLAN", desc: "Manager of Space Systems Design and Test Laboratory at Istanbul Technical University" },  
+        { img: "/Comite5.jpeg", name: "Merve ÖZEK", desc: "Senior Corporate Communications Specialist at TÜBİTAK UZAY" },
+         { img: "/Konuşmacı26.jpeg", name: "Cem BİLSEL", desc: "Board Member at TUYAD" }   
       ].map((member, idx) => (
         <div
           key={idx}

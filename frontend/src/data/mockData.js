@@ -48,13 +48,6 @@ export const conferenceData = {
   ],
 
   speakers: [
-    {
-      id: 24,
-      name: "Zekeriya ÇOŞTU",
-      title: "T.C. Deputy Minister of Industry and Technology",
-      image: "\ZEKERİYA-ÇOŞTU.jpeg",
-      bio: 'linkedin24'
-    },
      {
       id: 23,
       name: "Yusuf KIRAÇ",
@@ -62,13 +55,7 @@ export const conferenceData = {
       image: "\Konuşmacı23.jpeg",
       bio: 'linkedin23'
     },
-    {
-      id: 10,
-      name: "Ömer Abdullah KARAGÖZOĞLU",
-      title: "President of Turkish Information Technologies and Communication Authority (BTK)",
-      image: "\Konuşmacı10.jpeg",
-      bio: 'linkedin10'
-    },
+    
      {
       id: 29,
       name: "Ahmet Hamdi ATALAY",

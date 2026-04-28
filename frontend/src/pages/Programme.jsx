@@ -26,9 +26,7 @@ const Programme = () => (
             <div className="mt-2 text-xs md:text-sm text-cyan-200">
               <span className="block mb-1">Ali YAZICI, INSECSPACE’2026 Conference President</span>
               <span className="block mb-1">Ahmet Hamdi ATALAY, TÜRKSAT General Manager</span>
-              <span className="block mb-1">Ömer Abdullah KARAGÖZOĞLU, President of Turkish Information Technologies and Communication Authority (BTK)*</span>
               <span className="block mb-1">Yusuf KIRAÇ, President of Turkish Space Agency (TUA)</span>
-              <span className="block mb-1">Zekeriya ÇOŞTU, T.C. Deputy Minister of Industry and Technology </span>
               <span className="block mb-1">Ömer Fatih SAYAN, T.C. Deputy Minister of Transport and Infrastructure*</span>
             </div>
           </div>
